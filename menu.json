@@ -12,7 +12,7 @@
     "category_id": 2,
     "category_name": "Arroz Frito",
     "id": 1,
-    "name": "#1 Arroz el primero",
+    "name": "Arroz El Primero",
     "units": [
       {
         "ExchangeRate": 1,
@@ -43,7 +43,7 @@
     "category_id": 2,
     "category_name": "Arroz Frito",
     "id": 2,
-    "name": "#2 Arroz con pollo",
+    "name": "Arroz con pollo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -74,7 +74,7 @@
     "category_id": 2,
     "category_name": "Arroz Frito",
     "id": 3,
-    "name": "#3 Arroz con lech\u00f3n",
+    "name": "Arroz con lechón",
     "units": [
       {
         "ExchangeRate": 1,
@@ -105,7 +105,7 @@
     "category_id": 2,
     "category_name": "Arroz Frito",
     "id": 4,
-    "name": "#4 Arroz con carne de res",
+    "name": "Arroz con carne de res",
     "units": [
       {
         "ExchangeRate": 1,
@@ -136,7 +136,7 @@
     "category_id": 2,
     "category_name": "Arroz Frito",
     "id": 5,
-    "name": "#5 Arroz con pollo y camar\u00f3n",
+    "name": "Arroz con pollo y camarón",
     "units": [
       {
         "ExchangeRate": 1,
@@ -167,7 +167,7 @@
     "category_id": 2,
     "category_name": "Arroz Frito",
     "id": 6,
-    "name": "#6 Arroz con camar\u00f3nnes",
+    "name": "Arroz con camarones",
     "units": [
       {
         "ExchangeRate": 1,
@@ -198,7 +198,7 @@
     "category_id": 2,
     "category_name": "Arroz Frito",
     "id": 7,
-    "name": "#7 Arroz con pollo y lech\u00f3n",
+    "name": "Arroz con pollo y lechón",
     "units": [
       {
         "ExchangeRate": 1,
@@ -229,7 +229,7 @@
     "category_id": 2,
     "category_name": "Arroz Frito",
     "id": 8,
-    "name": "#8 Arroz con calamar",
+    "name": "Arroz con calamar",
     "units": [
       {
         "ExchangeRate": 1,
@@ -260,7 +260,7 @@
     "category_id": 2,
     "category_name": "Arroz Frito",
     "id": 9,
-    "name": "#9 Arroz con chorizo chino",
+    "name": "Arroz con chorizo chino",
     "units": [
       {
         "ExchangeRate": 1,
@@ -291,7 +291,7 @@
     "category_id": 2,
     "category_name": "Arroz Frito",
     "id": 10,
-    "name": "#10 Arroz con pollo y jam\u00f3n",
+    "name": "Arroz con pollo y jamón",
     "units": [
       {
         "ExchangeRate": 1,
@@ -322,7 +322,7 @@
     "category_id": 2,
     "category_name": "Arroz Frito",
     "id": 11,
-    "name": "#11 Arroz con mariscos",
+    "name": "Arroz con mariscos",
     "units": [
       {
         "ExchangeRate": 1,
@@ -353,7 +353,7 @@
     "category_id": 2,
     "category_name": "Arroz Frito",
     "id": 12,
-    "name": "#12 Arroz frito vegetariano",
+    "name": "Arroz frito vegetariano",
     "units": [
       {
         "ExchangeRate": 1,
@@ -384,7 +384,7 @@
     "category_id": 3,
     "category_name": "Arroz En Salsa",
     "id": 13,
-    "name": "#13 Arroz en salsa de la casa",
+    "name": "Arroz en salsa de la casa",
     "units": [
       {
         "ExchangeRate": 1,
@@ -415,7 +415,7 @@
     "category_id": 3,
     "category_name": "Arroz En Salsa",
     "id": 14,
-    "name": "#14 Arroz con pollo y verduras",
+    "name": "Arroz con pollo y verduras",
     "units": [
       {
         "ExchangeRate": 1,
@@ -446,7 +446,7 @@
     "category_id": 3,
     "category_name": "Arroz En Salsa",
     "id": 15,
-    "name": "#15 Arroz con carne de res y verduras",
+    "name": "Arroz con carne de res y verduras",
     "units": [
       {
         "ExchangeRate": 1,
@@ -477,7 +477,7 @@
     "category_id": 3,
     "category_name": "Arroz En Salsa",
     "id": 16,
-    "name": "#16 Arroz con pollo,camarones y verduras",
+    "name": "Arroz con pollo, camarones y verduras",
     "units": [
       {
         "ExchangeRate": 1,
@@ -508,7 +508,7 @@
     "category_id": 3,
     "category_name": "Arroz En Salsa",
     "id": 17,
-    "name": "#17 Arroz con lech\u00f3n y verduras",
+    "name": "Arroz con lechón y verduras",
     "units": [
       {
         "ExchangeRate": 1,
@@ -539,7 +539,7 @@
     "category_id": 3,
     "category_name": "Arroz En Salsa",
     "id": 18,
-    "name": "#18 Arroz con lech\u00f3n especial",
+    "name": "Arroz con lechón especial",
     "units": [
       {
         "ExchangeRate": 1,
@@ -570,7 +570,7 @@
     "category_id": 29,
     "category_name": "Arroz En Salsa Tomate",
     "id": 19,
-    "name": "#19 Aroz con pollo en salsa de tomate al horno",
+    "name": "Arroz con pollo en salsa de tomate al horno",
     "units": [
       {
         "ExchangeRate": 1,
@@ -594,7 +594,7 @@
     "category_id": 29,
     "category_name": "Arroz En Salsa Tomate",
     "id": 20,
-    "name": "#20 Arroz con lomo en salsa de tomate al horno",
+    "name": "Arroz con lomo en salsa de tomate al horno",
     "units": [
       {
         "ExchangeRate": 1,
@@ -618,7 +618,7 @@
     "category_id": 29,
     "category_name": "Arroz En Salsa Tomate",
     "id": 21,
-    "name": "#21c Arroz con camar\u00f3n en salsa de tomate",
+    "name": "Arroz con camarón en salsa de tomate",
     "units": [
       {
         "ExchangeRate": 1,
@@ -642,7 +642,7 @@
     "category_id": 30,
     "category_name": "Arroz En Salsa Curry",
     "id": 22,
-    "name": "#22 Arroz con pollo y verdura",
+    "name": "Arroz con pollo y verdura",
     "units": [
       {
         "ExchangeRate": 1,
@@ -673,7 +673,7 @@
     "category_id": 30,
     "category_name": "Arroz En Salsa Curry",
     "id": 23,
-    "name": "#23 Arroz con camar\u00f3n especial",
+    "name": "Arroz con camarón especial",
     "units": [
       {
         "ExchangeRate": 1,
@@ -704,7 +704,7 @@
     "category_id": 30,
     "category_name": "Arroz En Salsa Curry",
     "id": 24,
-    "name": "#24 Arroz con pollo especial",
+    "name": "Arroz con pollo especial",
     "units": [
       {
         "ExchangeRate": 1,
@@ -735,7 +735,7 @@
     "category_id": 30,
     "category_name": "Arroz En Salsa Curry",
     "id": 25,
-    "name": "#25 Arroz con lomo especial",
+    "name": "Arroz con lomo especial",
     "units": [
       {
         "ExchangeRate": 1,
@@ -766,7 +766,7 @@
     "category_id": 31,
     "category_name": "Chop Suey En Salsa",
     "id": 26,
-    "name": "#26 Chop suey de la casa",
+    "name": "Chop suey de la casa",
     "units": [
       {
         "ExchangeRate": 1,
@@ -797,7 +797,7 @@
     "category_id": 31,
     "category_name": "Chop Suey En Salsa",
     "id": 27,
-    "name": "#27 Chop suey con pollo y verduras",
+    "name": "Chop suey con pollo y verduras",
     "units": [
       {
         "ExchangeRate": 1,
@@ -828,7 +828,7 @@
     "category_id": 31,
     "category_name": "Chop Suey En Salsa",
     "id": 28,
-    "name": "#28 Chop suey con carne de res y verduras",
+    "name": "Chop suey con carne de res y verduras",
     "units": [
       {
         "ExchangeRate": 1,
@@ -859,7 +859,7 @@
     "category_id": 31,
     "category_name": "Chop Suey En Salsa",
     "id": 29,
-    "name": "#29 Chop suey con lech\u00f3n y verduras",
+    "name": "Chop suey con lechón y verduras",
     "units": [
       {
         "ExchangeRate": 1,
@@ -890,7 +890,7 @@
     "category_id": 31,
     "category_name": "Chop Suey En Salsa",
     "id": 30,
-    "name": "#30 Chop suey con pollo, camar\u00f3nnes y verduras",
+    "name": "Chop suey con pollo, camarones y verduras",
     "units": [
       {
         "ExchangeRate": 1,
@@ -921,7 +921,7 @@
     "category_id": 31,
     "category_name": "Chop Suey En Salsa",
     "id": 31,
-    "name": "#31 Chop suey con camarones y verduras",
+    "name": "Chop suey con camarones y verduras",
     "units": [
       {
         "ExchangeRate": 1,
@@ -952,7 +952,7 @@
     "category_id": 31,
     "category_name": "Chop Suey En Salsa",
     "id": 32,
-    "name": "#32 Chop suey con mariscos y verduras",
+    "name": "Chop suey con mariscos y verduras",
     "units": [
       {
         "ExchangeRate": 1,
@@ -983,7 +983,7 @@
     "category_id": 31,
     "category_name": "Chop Suey En Salsa",
     "id": 33,
-    "name": "#33 Chop suey con chorizo chino y verduras",
+    "name": "Chop suey con chorizo chino y verduras",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1014,7 +1014,7 @@
     "category_id": 31,
     "category_name": "Chop Suey En Salsa",
     "id": 34,
-    "name": "#34 Chop suey vegetariano",
+    "name": "Chop suey vegetariano",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1045,7 +1045,7 @@
     "category_id": 32,
     "category_name": "Chop Suey En Seco",
     "id": 35,
-    "name": "#35 Chop suey seco de la casa",
+    "name": "Chop suey seco de la casa",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1076,7 +1076,7 @@
     "category_id": 32,
     "category_name": "Chop Suey En Seco",
     "id": 36,
-    "name": "#27s Chop suey seco con pollo",
+    "name": "Chop suey seco con pollo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1107,7 +1107,7 @@
     "category_id": 32,
     "category_name": "Chop Suey En Seco",
     "id": 37,
-    "name": "#28s Chop suey seco con carne de res",
+    "name": "Chop suey seco con carne de res",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1138,7 +1138,7 @@
     "category_id": 32,
     "category_name": "Chop Suey En Seco",
     "id": 38,
-    "name": "#28h Sahofan seco con lomo",
+    "name": "Sahofan seco con lomo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1169,7 +1169,7 @@
     "category_id": 32,
     "category_name": "Chop Suey En Seco",
     "id": 39,
-    "name": "#29s Chop suey seco con lech\u00f3n",
+    "name": "Chop suey seco con lechón",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1200,7 +1200,7 @@
     "category_id": 32,
     "category_name": "Chop Suey En Seco",
     "id": 40,
-    "name": "#30s Chop suey seco con pollo, camarones",
+    "name": "Chop suey seco con pollo, camarones",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1231,7 +1231,7 @@
     "category_id": 32,
     "category_name": "Chop Suey En Seco",
     "id": 41,
-    "name": "#31s Chop suey seco con camarones",
+    "name": "Chop suey seco con camarones",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1262,7 +1262,7 @@
     "category_id": 32,
     "category_name": "Chop Suey En Seco",
     "id": 42,
-    "name": "#32s Chop suey seco con mariscos",
+    "name": "Chop suey seco con mariscos",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1293,7 +1293,7 @@
     "category_id": 32,
     "category_name": "Chop Suey En Seco",
     "id": 43,
-    "name": "#33s Chop suey seco con chorizo chino",
+    "name": "Chop suey seco con chorizo chino",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1324,7 +1324,7 @@
     "category_id": 32,
     "category_name": "Chop Suey En Seco",
     "id": 44,
-    "name": "#34s Chop suey seco vegetariano",
+    "name": "Chop suey seco vegetariano",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1355,7 +1355,7 @@
     "category_id": 33,
     "category_name": "Chau Min",
     "id": 45,
-    "name": "#36 Chau min de la casa",
+    "name": "Chau min de la casa",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1386,7 +1386,7 @@
     "category_id": 33,
     "category_name": "Chau Min",
     "id": 46,
-    "name": "#36p Pasta de chau min",
+    "name": "Pasta de chau min",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1417,7 +1417,7 @@
     "category_id": 33,
     "category_name": "Chau Min",
     "id": 47,
-    "name": "#37 Chau min con pollo",
+    "name": "Chau min con pollo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1448,7 +1448,7 @@
     "category_id": 33,
     "category_name": "Chau Min",
     "id": 48,
-    "name": "#38 Chau min con camarones",
+    "name": "Chau min con camarones",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1479,7 +1479,7 @@
     "category_id": 34,
     "category_name": "Espagueti",
     "id": 49,
-    "name": "#39 Espagueti con pollo en salsa de tomate",
+    "name": "Espagueti con pollo en salsa de tomate",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1510,7 +1510,7 @@
     "category_id": 34,
     "category_name": "Espagueti",
     "id": 50,
-    "name": "#40 Espagueti con carne de res en salsa de tomate",
+    "name": "Espagueti con carne de res en salsa de tomate",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1534,7 +1534,7 @@
     "category_id": 34,
     "category_name": "Espagueti",
     "id": 51,
-    "name": "#41c Espagueti con camar\u00f3n en salsa de tomate",
+    "name": "Espagueti con camarón en salsa de tomate",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1558,7 +1558,7 @@
     "category_id": 14,
     "category_name": "Sopa",
     "id": 52,
-    "name": "#42 Sopa de mariscos",
+    "name": "Sopa de mariscos",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1589,7 +1589,7 @@
     "category_id": 14,
     "category_name": "Sopa",
     "id": 53,
-    "name": "#43 Sopa de huevo",
+    "name": "Sopa de huevo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1620,7 +1620,7 @@
     "category_id": 14,
     "category_name": "Sopa",
     "id": 54,
-    "name": "#44 Sopa de carne de res",
+    "name": "Sopa de carne de res",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1651,7 +1651,7 @@
     "category_id": 14,
     "category_name": "Sopa",
     "id": 55,
-    "name": "#45 Sopa de camrones",
+    "name": "Sopa de camarones",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1682,7 +1682,7 @@
     "category_id": 14,
     "category_name": "Sopa",
     "id": 56,
-    "name": "#46 Sopa de pollo",
+    "name": "Sopa de pollo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1713,7 +1713,7 @@
     "category_id": 14,
     "category_name": "Sopa",
     "id": 57,
-    "name": "#46m Crema de maiz con pollo",
+    "name": "Crema de maíz con pollo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1744,7 +1744,7 @@
     "category_id": 14,
     "category_name": "Sopa",
     "id": 58,
-    "name": "#47 Sopa con verduras",
+    "name": "Sopa con verduras",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1775,7 +1775,7 @@
     "category_id": 14,
     "category_name": "Sopa",
     "id": 59,
-    "name": "#48 Sopa negra con pollo y huevo",
+    "name": "Sopa negra con pollo y huevo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1806,7 +1806,7 @@
     "category_id": 14,
     "category_name": "Sopa",
     "id": 60,
-    "name": "#49 Sopa de tallarin",
+    "name": "Sopa de tallarín",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1837,7 +1837,7 @@
     "category_id": 14,
     "category_name": "Sopa",
     "id": 61,
-    "name": "#49s Sopa de Saho Fan",
+    "name": "Sopa de Saho Fan",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1868,7 +1868,7 @@
     "category_id": 14,
     "category_name": "Sopa",
     "id": 62,
-    "name": "#50 Sopa de wan tan de pollo",
+    "name": "Sopa de wan tan de pollo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1899,7 +1899,7 @@
     "category_id": 14,
     "category_name": "Sopa",
     "id": 63,
-    "name": "#50c Sopa de wan tan de C",
+    "name": "Sopa de wan tan de C",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1930,7 +1930,7 @@
     "category_id": 15,
     "category_name": "Aperitivos",
     "id": 64,
-    "name": "#51 Wan tan frito de pollo",
+    "name": "Wan tan frito de pollo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -1968,7 +1968,7 @@
     "category_id": 15,
     "category_name": "Aperitivos",
     "id": 65,
-    "name": "#51c Wan tan frito de Camarones",
+    "name": "Wan tan frito de camarones",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2006,7 +2006,7 @@
     "category_id": 15,
     "category_name": "Aperitivos",
     "id": 66,
-    "name": "#52 Taco chino",
+    "name": "Taco chino",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2044,7 +2044,7 @@
     "category_id": 15,
     "category_name": "Aperitivos",
     "id": 67,
-    "name": "#52p Papas fritas",
+    "name": "Papas fritas",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2082,7 +2082,7 @@
     "category_id": 16,
     "category_name": "Carne De Res",
     "id": 68,
-    "name": "#53 Bistec el primero",
+    "name": "Bistec El Primero",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2120,7 +2120,7 @@
     "category_id": 16,
     "category_name": "Carne De Res",
     "id": 69,
-    "name": "#54 Bistec en salsa de tomate",
+    "name": "Bistec en salsa de tomate",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2144,7 +2144,7 @@
     "category_id": 16,
     "category_name": "Carne De Res",
     "id": 70,
-    "name": "#55 Bistec empanizado",
+    "name": "Bistec empanizado",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2168,7 +2168,7 @@
     "category_id": 16,
     "category_name": "Carne De Res",
     "id": 71,
-    "name": "#56 Bistec encebollado",
+    "name": "Bistec encebollado",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2192,7 +2192,7 @@
     "category_id": 17,
     "category_name": "Carne De Cerdo",
     "id": 72,
-    "name": "#60 Chuleta encebollada",
+    "name": "Chuleta encebollada",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2216,7 +2216,7 @@
     "category_id": 17,
     "category_name": "Carne De Cerdo",
     "id": 73,
-    "name": "#61 Chuleta en salsa de tomate",
+    "name": "Chuleta en salsa de tomate",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2240,7 +2240,7 @@
     "category_id": 17,
     "category_name": "Carne De Cerdo",
     "id": 74,
-    "name": "#62 Chuleta empanizada",
+    "name": "Chuleta empanizada",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2264,7 +2264,7 @@
     "category_id": 17,
     "category_name": "Carne De Cerdo",
     "id": 75,
-    "name": "#63 Lech\u00f3n asado estilo chino",
+    "name": "Lechón asado estilo chino",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2288,7 +2288,7 @@
     "category_id": 18,
     "category_name": "Pescado",
     "id": 76,
-    "name": "#64 Filet de pescado frito empanizado",
+    "name": "Filet de pescado frito empanizado",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2312,7 +2312,7 @@
     "category_id": 18,
     "category_name": "Pescado",
     "id": 77,
-    "name": "#65 Filet de pescado en salsa de tomate",
+    "name": "Filet de pescado en salsa de tomate",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2336,7 +2336,7 @@
     "category_id": 18,
     "category_name": "Pescado",
     "id": 78,
-    "name": "#66 Filet de pescado en salsa de ostiones",
+    "name": "Filet de pescado en salsa de ostiones",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2360,7 +2360,7 @@
     "category_id": 18,
     "category_name": "Pescado",
     "id": 79,
-    "name": "#67 Filet de pescado a la mantequilla y ajo",
+    "name": "Filet de pescado a la mantequilla y ajo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2384,7 +2384,7 @@
     "category_id": 18,
     "category_name": "Pescado",
     "id": 80,
-    "name": "#68 Filet de pescado en salsa agridulce",
+    "name": "Filet de pescado en salsa agridulce",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2408,7 +2408,7 @@
     "category_id": 19,
     "category_name": "Camarones",
     "id": 81,
-    "name": "#69 Camarones fritos empanizados",
+    "name": "Camarones fritos empanizados",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2432,7 +2432,7 @@
     "category_id": 19,
     "category_name": "Camarones",
     "id": 82,
-    "name": "#70 Camarones fritos en salsa de tomate",
+    "name": "Camarones fritos en salsa de tomate",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2456,7 +2456,7 @@
     "category_id": 19,
     "category_name": "Camarones",
     "id": 83,
-    "name": "#71 Camarones fritos en salsa agridulce",
+    "name": "Camarones fritos en salsa agridulce",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2480,7 +2480,7 @@
     "category_id": 19,
     "category_name": "Camarones",
     "id": 84,
-    "name": "#72 Camarones fritos en salsa de ostiones",
+    "name": "Camarones fritos en salsa de ostiones",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2504,7 +2504,7 @@
     "category_id": 19,
     "category_name": "Camarones",
     "id": 85,
-    "name": "#73 Camarones a la mantequilla y ajo",
+    "name": "Camarones a la mantequilla y ajo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2528,7 +2528,7 @@
     "category_id": 20,
     "category_name": "Carne Blanca",
     "id": 86,
-    "name": "#79 Alitas de pollo fritas con papas a la francesa",
+    "name": "Alitas de pollo fritas con papas a la francesa",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2552,7 +2552,7 @@
     "category_id": 20,
     "category_name": "Carne Blanca",
     "id": 87,
-    "name": "#79s Solo Alitas",
+    "name": "Solo alitas",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2583,7 +2583,7 @@
     "category_id": 21,
     "category_name": "Ensaladas Frias",
     "id": 88,
-    "name": "#80 Ensalada de camarones",
+    "name": "Ensalada de camarones",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2614,7 +2614,7 @@
     "category_id": 21,
     "category_name": "Ensaladas Frias",
     "id": 89,
-    "name": "#81 Ensalada de palmito",
+    "name": "Ensalada de palmito",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2638,7 +2638,7 @@
     "category_id": 21,
     "category_name": "Ensaladas Frias",
     "id": 90,
-    "name": "#82 Ensalada mixta",
+    "name": "Ensalada mixta",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2662,7 +2662,7 @@
     "category_id": 21,
     "category_name": "Ensaladas Frias",
     "id": 91,
-    "name": "#83 Ensalada de pollo",
+    "name": "Ensalada de pollo",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2686,7 +2686,7 @@
     "category_id": 22,
     "category_name": "Platillos De China",
     "id": 92,
-    "name": "#88 Pollo salteado con champi\u00f1ones",
+    "name": "Pollo salteado con champiñones",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2710,7 +2710,7 @@
     "category_id": 22,
     "category_name": "Platillos De China",
     "id": 93,
-    "name": "#89 Pollo salteado con vegetales",
+    "name": "Pollo salteado con vegetales",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2734,7 +2734,7 @@
     "category_id": 22,
     "category_name": "Platillos De China",
     "id": 94,
-    "name": "#90 Lomito salteado con vegetales",
+    "name": "Lomito salteado con vegetales",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2758,7 +2758,7 @@
     "category_id": 22,
     "category_name": "Platillos De China",
     "id": 95,
-    "name": "#91 mixta salteado con vegetales",
+    "name": "Mixta salteado con vegetales",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2782,7 +2782,7 @@
     "category_id": 22,
     "category_name": "Platillos De China",
     "id": 96,
-    "name": "#92 Mariscos  salteado con vegetales",
+    "name": "Mariscos salteado con vegetales",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2806,7 +2806,7 @@
     "category_id": 22,
     "category_name": "Platillos De China",
     "id": 97,
-    "name": "#93 lech\u00f3n  salteado con vegetales",
+    "name": "Lechón salteado con vegetales",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2830,7 +2830,7 @@
     "category_id": 22,
     "category_name": "Platillos De China",
     "id": 98,
-    "name": "#94 Camarones salteados con vegetales",
+    "name": "Camarones salteados con vegetales",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2854,7 +2854,7 @@
     "category_id": 22,
     "category_name": "Platillos De China",
     "id": 99,
-    "name": "#96 Pescado salteado con vegetales",
+    "name": "Pescado salteado con vegetales",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2878,7 +2878,7 @@
     "category_id": 22,
     "category_name": "Platillos De China",
     "id": 100,
-    "name": "#97 Carne de cerdo ba\u00f1ado en salsa agridulce",
+    "name": "Carne de cerdo bañado en salsa agridulce",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2902,7 +2902,7 @@
     "category_id": 22,
     "category_name": "Platillos De China",
     "id": 101,
-    "name": "#98 Pollo cubierto en salsa agridulce",
+    "name": "Pollo cubierto en salsa agridulce",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2926,7 +2926,7 @@
     "category_id": 23,
     "category_name": "Casados Combinado",
     "id": 102,
-    "name": "#102 Combinado con Camarones frito",
+    "name": "Combinado con camarones fritos",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2950,7 +2950,7 @@
     "category_id": 23,
     "category_name": "Casados Combinado",
     "id": 103,
-    "name": "#103 Combinado con chorizo chino frito",
+    "name": "Combinado con chorizo chino frito",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2974,7 +2974,7 @@
     "category_id": 23,
     "category_name": "Casados Combinado",
     "id": 104,
-    "name": "#105 Combinado con pollo frito",
+    "name": "Combinado con pollo frito",
     "units": [
       {
         "ExchangeRate": 1,
@@ -2998,7 +2998,7 @@
     "category_id": 23,
     "category_name": "Casados Combinado",
     "id": 105,
-    "name": "#105a Combinado con alitas de pollo frito",
+    "name": "Combinado con alitas de pollo frito",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3022,7 +3022,7 @@
     "category_id": 23,
     "category_name": "Casados Combinado",
     "id": 106,
-    "name": "#105s Combinado con  Pollo en salsa agridulce",
+    "name": "Combinado con pollo en salsa agridulce",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3046,7 +3046,7 @@
     "category_id": 23,
     "category_name": "Casados Combinado",
     "id": 107,
-    "name": "#106 Combinado con chuleta frita",
+    "name": "Combinado con chuleta frita",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3070,7 +3070,7 @@
     "category_id": 23,
     "category_name": "Casados Combinado",
     "id": 108,
-    "name": "#107 Combinado con bistec frito",
+    "name": "Combinado con bistec frito",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3094,7 +3094,7 @@
     "category_id": 23,
     "category_name": "Casados Combinado",
     "id": 109,
-    "name": "#108 Combinado con pescado frito",
+    "name": "Combinado con pescado frito",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3118,7 +3118,7 @@
     "category_id": 23,
     "category_name": "Casados Combinado",
     "id": 110,
-    "name": "#109 Combinado con lech\u00f3n asado",
+    "name": "Combinado con lechón asado",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3142,7 +3142,7 @@
     "category_id": 24,
     "category_name": "Casados Chino",
     "id": 111,
-    "name": "#110 Cantones con chop suey en salsa",
+    "name": "Cantonés con chop suey en salsa",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3173,7 +3173,7 @@
     "category_id": 24,
     "category_name": "Casados Chino",
     "id": 112,
-    "name": "#111 Cantones con chop suey seco",
+    "name": "Cantonés con chop suey seco",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3204,7 +3204,7 @@
     "category_id": 24,
     "category_name": "Casados Chino",
     "id": 113,
-    "name": "#112 Canton\u00e9s con papas",
+    "name": "Cantonés con papas",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3235,7 +3235,7 @@
     "category_id": 25,
     "category_name": "Combos",
     "id": 114,
-    "name": "#c1 Combinado con pollo frito",
+    "name": "Combinado con pollo frito",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3266,7 +3266,7 @@
     "category_id": 25,
     "category_name": "Combos",
     "id": 115,
-    "name": "#c2 Combinado con Alitas de Pollo Fritas",
+    "name": "Combinado con alitas de pollo fritas",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3290,7 +3290,7 @@
     "category_id": 25,
     "category_name": "Combos",
     "id": 116,
-    "name": "#c3 Combinado con pescado frito",
+    "name": "Combinado con pescado frito",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3314,7 +3314,7 @@
     "category_id": 25,
     "category_name": "Combos",
     "id": 117,
-    "name": "#c4 Combinado con Camarones frito",
+    "name": "Combinado con camarones fritos",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3338,7 +3338,7 @@
     "category_id": 25,
     "category_name": "Combos",
     "id": 118,
-    "name": "#c5 Combinado con Pollo en Salsa Agridulce",
+    "name": "Combinado con pollo en salsa agridulce",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3362,7 +3362,7 @@
     "category_id": 25,
     "category_name": "Combos",
     "id": 119,
-    "name": "#c6 Canton\u00e9s con chop suey en salsa",
+    "name": "Cantonés con chop suey en salsa",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3393,7 +3393,7 @@
     "category_id": 25,
     "category_name": "Combos",
     "id": 120,
-    "name": "#c7 Canton\u00e9s con Papas",
+    "name": "Cantonés con papas",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3424,7 +3424,7 @@
     "category_id": 26,
     "category_name": "combos familiar",
     "id": 121,
-    "name": "#c9 2 entero cantones con coca 1.5L",
+    "name": "2 arroces cantoneses y Coca Cola 1.5 L",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3455,7 +3455,7 @@
     "category_id": 26,
     "category_name": "combos familiar",
     "id": 122,
-    "name": "#c10 1cantones 10alitas,1/2papas y coca 1.5L",
+    "name": "Arroz cantonés, 10 alitas, 1/2 orden de papas y Coca Cola 1.5 L",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3479,7 +3479,7 @@
     "category_id": 26,
     "category_name": "combos familiar",
     "id": 123,
-    "name": "#c11 1 entero cantones,papas grandes,  y coca 1.5L",
+    "name": "Arroz cantonés entero, papas grandes y Coca Cola 1.5 L",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3503,7 +3503,7 @@
     "category_id": 26,
     "category_name": "combos familiar",
     "id": 124,
-    "name": "#c12 1 entero cantones 10 alitas,  y coca 1.5L",
+    "name": "Arroz cantonés entero, 10 alitas y Coca Cola 1.5 L",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3527,7 +3527,7 @@
     "category_id": 26,
     "category_name": "combos familiar",
     "id": 125,
-    "name": "#c13 2cantones,79s,papasG,1wantan G,1coca 2.5L",
+    "name": "2 arroces cantoneses, 79S, papas grandes, wantán grande y Coca Cola 2.5 L",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3551,7 +3551,7 @@
     "category_id": 1,
     "category_name": "Bebidas",
     "id": 126,
-    "name": "Coca",
+    "name": "Coca Cola",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3596,7 +3596,7 @@
     "category_id": 1,
     "category_name": "Bebidas",
     "id": 127,
-    "name": "Coca Zero",
+    "name": "Coca Cola Zero",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3658,7 +3658,7 @@
     "category_id": 1,
     "category_name": "Bebidas",
     "id": 129,
-    "name": "Fanta naranja",
+    "name": "Fanta Naranja",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3782,7 +3782,7 @@
     "category_id": 1,
     "category_name": "Bebidas",
     "id": 133,
-    "name": "7up",
+    "name": "7UP",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3868,7 +3868,7 @@
     "category_id": 1,
     "category_name": "Bebidas",
     "id": 136,
-    "name": "Te Blanco",
+    "name": "Té blanco",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3899,7 +3899,7 @@
     "category_id": 1,
     "category_name": "Bebidas",
     "id": 137,
-    "name": "Te Limon",
+    "name": "Té limón",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3930,7 +3930,7 @@
     "category_id": 1,
     "category_name": "Bebidas",
     "id": 138,
-    "name": "Te Manzana",
+    "name": "Té manzana",
     "units": [
       {
         "ExchangeRate": 1,
@@ -3961,7 +3961,7 @@
     "category_id": 1,
     "category_name": "Bebidas",
     "id": 139,
-    "name": "Te Melecoton",
+    "name": "Té melocotón",
     "units": [
       {
         "ExchangeRate": 1,
@@ -4023,7 +4023,7 @@
     "category_id": 1,
     "category_name": "Bebidas",
     "id": 141,
-    "name": "Cafe con leche",
+    "name": "Café con leche",
     "units": [
       {
         "ExchangeRate": 1,
@@ -4047,7 +4047,7 @@
     "category_id": 1,
     "category_name": "Bebidas",
     "id": 142,
-    "name": "cafe",
+    "name": "Café",
     "units": [
       {
         "ExchangeRate": 1,
@@ -4055,30 +4055,6 @@
         "Price": 1400,
         "id": 142,
         "name": "vaso"
-      }
-    ]
-  },
-  {
-    "Code": "00170",
-    "IsEatIn": 1,
-    "IsFastFood": 1,
-    "IsStoped": 0,
-    "IsTakeOut": 1,
-    "Notes": null,
-    "Price": 5700,
-    "ShortCode": "SERVICIOS",
-    "Tastes": "",
-    "category_id": 36,
-    "category_name": "SERVICIOS",
-    "id": 188,
-    "name": "SERVICIOS",
-    "units": [
-      {
-        "ExchangeRate": 1,
-        "IsDefault": 1,
-        "Price": 5700,
-        "id": 295,
-        "name": "orden"
       }
     ]
   }

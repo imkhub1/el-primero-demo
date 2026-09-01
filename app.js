@@ -1,14 +1,15 @@
 const STORAGE_CART = 'el-primero-cart-v1';
 const STORAGE_ORDER_COMMENT = 'el-primero-order-comment-v1';
 const STORAGE_ORDERS = 'el-primero-orders-v1';
+const STORAGE_LANGUAGE = 'el-primero-language';
 const WHATSAPP_NUMBER = '50625601234';
 const DISCOUNT_PERCENT = 10;
 const DELIVERY_FEE = 0;
 const FEATURED_PRODUCTS = [
-  { id: 1, image: 'https://images.unsplash.com/photo-1564464392342-54692a5d59a0?auto=format&fit=crop&w=900&q=80', alt: 'Imagen ilustrativa de un plato de arroz frito.' },
-  { id: 26, image: 'https://images.unsplash.com/photo-1680991554256-da64cc827619?auto=format&fit=crop&w=900&q=80', alt: 'Imagen ilustrativa de un tazón con vegetales y fideos.' },
-  { id: 45, image: 'https://images.unsplash.com/photo-1767324672643-c4979362f922?auto=format&fit=crop&w=900&q=80', alt: 'Imagen ilustrativa de fideos salteados.' },
-  { id: 68, image: 'https://images.unsplash.com/photo-1767324672655-8e0f5e814897?auto=format&fit=crop&w=900&q=80', alt: 'Imagen ilustrativa de carne de res salteada.' },
+  { id: 1, image: 'arroz-cantones.jpg', alt: 'Arroz cantonés con camarones, carnes y vegetales recién servido.' },
+  { id: 26, image: 'https://images.unsplash.com/photo-1758979690131-11e2aa0b142b?auto=format&fit=crop&w=900&h=650&q=82', alt: 'Chop suey tradicional con pollo, fideos y vegetales.' },
+  { id: 45, image: 'https://images.unsplash.com/photo-1578419997901-b409e7e400b8?auto=format&fit=crop&w=900&h=650&q=82', alt: 'Chau min tradicional con carne y vegetales.' },
+  { id: 68, image: 'https://images.unsplash.com/photo-1767429012942-b707f5a8b704?auto=format&fit=crop&w=900&h=650&q=82', alt: 'Bistec salteado con cebolla y chile dulce.' },
 ];
 
 
@@ -37,7 +38,7 @@ const CATEGORY_ORDER = [
   'Chop Suey En Salsa', 'Chop Suey En Seco', 'Chau Min', 'Espagueti', 'Sopa',
   'Aperitivos', 'Carne De Res', 'Carne De Cerdo', 'Pescado', 'Camarones',
   'Carne Blanca', 'Ensaladas Frias', 'Platillos De China', 'Combos',
-  'combos familiar', 'SERVICIOS',
+  'combos familiar',
 ];
 
 const CATEGORY_META = {
@@ -64,8 +65,197 @@ const CATEGORY_META = {
   'Platillos De China': { label: 'Platillos de China', glyph: '◎' },
   Combos: { label: 'Combos', glyph: '♧' },
   'combos familiar': { label: 'Combos familiares', glyph: '♧' },
-  SERVICIOS: { label: 'Servicios', glyph: '+' },
 };
+
+const EN = {
+  'El Primero | Cocina asiática': 'El Primero | Asian cuisine',
+  'Pide comida asiática de El Primero para recoger o recibir en casa.': 'Order Asian food from El Primero for pickup or delivery.',
+  'cocina asiática': 'Asian cuisine',
+  'Saltar al menú': 'Skip to menu',
+  'Navegación principal': 'Primary navigation',
+  'Menú': 'Menu',
+  'Cómo pedir': 'How to order',
+  'El Primero, inicio': 'El Primero, home',
+  'Logo de El Primero': 'El Primero logo',
+  'Cambiar idioma a inglés': 'Switch language to English',
+  'Arroz cantonés tradicional con huevo, vegetales y salsa de soya.': 'Traditional Cantonese fried rice with egg, vegetables, and soy sauce.',
+  'Chop suey tradicional con pollo, fideos y vegetales.': 'Traditional chop suey with chicken, noodles, and vegetables.',
+  'Chau min tradicional con carne y vegetales.': 'Traditional chow mein with beef and vegetables.',
+  'Bistec salteado con cebolla y chile dulce.': 'Stir-fried beef with onion and sweet pepper.',
+  'Información': 'Information',
+  'Preferencias': 'Preferences',
+  'Mi pedido': 'My order',
+  'Hecho al momento': 'Made to order',
+  'Lo bueno': 'Good food',
+  'se comparte.': 'is meant to be shared.',
+  'Arroz frito, chop suey y favoritos de la casa. Elige tus platos, arma tu pedido y nosotros hacemos el resto.': 'Fried rice, chop suey, and house favorites. Choose your dishes, build your order, and we will handle the rest.',
+  'Explorar menú': 'Explore menu',
+  'Ver mi pedido': 'View my order',
+  'Beneficios de pedir en El Primero': 'Benefits of ordering from El Primero',
+  'de descuento': 'discount',
+  'envío': 'delivery',
+  'formas de pago': 'payment methods',
+  'Promoción válida de agosto a octubre de 2026: 10% de descuento y delivery gratis dentro de un radio de 5 km.': 'Offer valid from August through October 2026: 10% off and free delivery within 5 km.',
+  '¿Cómo quieres recibirlo?': 'How would you like it?',
+  'Envío gratis': 'Free delivery',
+  'Recoger': 'Pickup',
+  'En el restaurante': 'At the restaurant',
+  'El menú': 'The menu',
+  'Tu próximo antojo': 'Your next craving',
+  'empieza aquí.': 'starts here.',
+  'Los clásicos que ya conoces, más ese plato que todavía no has probado. Selecciona cualquier opción para elegir tamaño, extras y cantidad.': 'The classics you know, plus the dish you have not tried yet. Select any option to choose a size, extras, and quantity.',
+  'Recomendados': 'Recommended',
+  'Favoritos de la casa': 'House favorites',
+  'Imágenes ilustrativas': 'Images for reference',
+  'Categorías del menú': 'Menu categories',
+  'Explorar por': 'Browse by',
+  'Buscar en el menú': 'Search the menu',
+  'Busca por nombre o ingrediente': 'Search by name or ingredient',
+  'Cargando menú...': 'Loading menu...',
+  'Explora por categoría o busca directamente un plato.': 'Browse by category or search for a dish.',
+  'Así de fácil': 'It is that easy',
+  'Un pedido sin': 'An order without',
+  'complicaciones.': 'complications.',
+  'Menos pasos entre tu antojo y la mesa.': 'Fewer steps between your craving and the table.',
+  'Arma tu plato': 'Build your dish',
+  'Elige tamaño y agrega los extras disponibles para cada plato.': 'Choose a size and add the extras available for each dish.',
+  'Revisa tu pedido': 'Review your order',
+  'Controla cantidades, deja un solo comentario para el pedido y revisa el total.': 'Adjust quantities, leave one note for the order, and review the total.',
+  'Recibe y disfruta': 'Receive and enjoy',
+  'Pago en efectivo, tarjeta contra entrega o SINPE Móvil.': 'Pay with cash, card on delivery, or SINPE Móvil.',
+  'Información del restaurante': 'Restaurant information',
+  'Aquí te esperamos.': 'We are ready for you.',
+  'Todo lo que necesitas para visitarnos o pedir desde casa.': 'Everything you need to visit us or order from home.',
+  'Horario': 'Hours',
+  'Martes a domingo': 'Tuesday to Sunday',
+  'Ubicación': 'Location',
+  '150 m este de AMPM, frente a la fábrica Smurfit Westrock, junto a Ferretería Jizar, Lagunilla de Heredia.': '150 m east of AMPM, across from the Smurfit Westrock factory, next to Ferretería Jizar, Lagunilla, Heredia.',
+  'Cobertura': 'Delivery area',
+  'Delivery gratis dentro de un radio de 5 km.': 'Free delivery within 5 km.',
+  'Contacto': 'Contact',
+  'Teléfono: 2560-1234': 'Phone: 2560-1234',
+  '¿Tienes una pregunta?': 'Have a question?',
+  'Escríbenos y te ayudamos con tu pedido.': 'Message us and we will help with your order.',
+  'Un sabor que siempre vuelve.': 'A flavor worth coming back to.',
+  'Todo el menú': 'Full menu',
+  'Bebidas': 'Drinks',
+  'Casados combinado': 'Combination plates',
+  'Casados chino': 'Chinese plates',
+  'Arroz frito': 'Fried rice',
+  'Arroz en salsa': 'Rice in sauce',
+  'Arroz con tomate': 'Tomato rice',
+  'Arroz al curry': 'Curry rice',
+  'Chop suey en salsa': 'Chop suey in sauce',
+  'Chop suey seco': 'Dry chop suey',
+  'Chau min': 'Chow mein',
+  'Espagueti': 'Spaghetti',
+  'Sopas': 'Soups',
+  'Aperitivos': 'Appetizers',
+  'Carne de res': 'Beef',
+  'Carne de cerdo': 'Pork',
+  'Pescado': 'Fish',
+  'Camarones': 'Shrimp',
+  'Carne blanca': 'Poultry',
+  'Ensaladas frías': 'Cold salads',
+  'Platillos de China': 'Chinese dishes',
+  'Combos familiares': 'Family combos',
+  'Camarones extra': 'Extra shrimp',
+  'Carne extra': 'Extra beef',
+  'Chorizo extra': 'Extra chorizo',
+  'Verdura extra': 'Extra vegetables',
+  'Huevo extra': 'Extra egg',
+  'medio': 'half',
+  'entero': 'full',
+  'unidad': 'each',
+  'orden': 'order',
+  'opción': 'option',
+  'opciones': 'options',
+  'para': 'for',
+  'en': 'in',
+  'pequeño': 'small',
+  'vaso': 'cup',
+  'vidrio': 'glass bottle',
+  'Resultados para': 'Results for',
+  'Selecciona un plato para elegir tamaño, extras y cantidad.': 'Select a dish to choose a size, extras, and quantity.',
+  'No encontramos ese antojo.': 'We could not find that craving.',
+  'Prueba con otro nombre o vuelve a ver todo el menú.': 'Try another name or return to the full menu.',
+  'Desde': 'From',
+  'Precio': 'Price',
+  'Personalizar': 'Customize',
+  'en tu pedido': 'in your order',
+  'Disminuir cantidad de': 'Decrease quantity of',
+  'Aumentar cantidad de': 'Increase quantity of',
+  'Quitar': 'Remove',
+  'Cantidad': 'Quantity',
+  'Comentario para el pedido (opcional)': 'Order note (optional)',
+  'Ej: sin cubiertos o indicaciones de entrega': 'E.g. no utensils or delivery instructions',
+  'Subtotal': 'Subtotal',
+  'Envío': 'Delivery',
+  'Gratis': 'Free',
+  'Descuento': 'Discount',
+  'Total': 'Total',
+  'Tu pedido': 'Your order',
+  'Tu pedido está esperando algo rico. Explora el menú y agrega tus favoritos.': 'Your order is waiting for something delicious. Browse the menu and add your favorites.',
+  'artículo': 'item',
+  'artículos': 'items',
+  'Continuar al checkout': 'Continue to checkout',
+  'Personaliza tu pedido': 'Customize your order',
+  'Cerrar': 'Close',
+  'Elige el tamaño': 'Choose a size',
+  'Tamaño de': 'Size for',
+  'Extras (opcional)': 'Extras (optional)',
+  'Disminuir cantidad': 'Decrease quantity',
+  'Aumentar cantidad': 'Increase quantity',
+  'Agregar al pedido': 'Add to order',
+  'Agregado al pedido': 'Added to order',
+  'Antes de confirmar': 'Before confirming',
+  'Agrega algo al pedido para continuar': 'Add something to your order to continue',
+  'Último paso': 'Last step',
+  'Confirmar pedido': 'Confirm order',
+  'Cerrar checkout': 'Close checkout',
+  'Delivery seleccionado · envío gratis': 'Delivery selected · free delivery',
+  'Recoger seleccionado · te esperamos en el restaurante': 'Pickup selected · we will see you at the restaurant',
+  'Nombre': 'Name',
+  'Tu nombre': 'Your name',
+  'Teléfono': 'Phone',
+  'Dirección de entrega': 'Delivery address',
+  'Provincia, cantón, señas exactas...': 'Province, canton, exact directions...',
+  'Forma de pago': 'Payment method',
+  'Efectivo': 'Cash',
+  'Si necesitas cambio, indícalo abajo.': 'If you need change, tell us below.',
+  'Tarjeta': 'Card',
+  'Pago contra entrega.': 'Pay on delivery.',
+  'El restaurante te indica los datos al confirmar.': 'The restaurant will provide the details when confirming.',
+  '¿Con cuánto pagarás? (opcional)': 'Cash amount (optional)',
+  'Ej: 10000': 'E.g. 10000',
+  'Te ayudaremos a calcular el cambio.': 'We will help calculate your change.',
+  'Preparar pedido': 'Prepare order',
+  'Al continuar guardaremos tu pedido en este dispositivo y podrás enviarlo al restaurante por WhatsApp.': 'We will save your order on this device so you can send it to the restaurant on WhatsApp.',
+  'Resumen del pedido': 'Order summary',
+  'Resumen': 'Summary',
+  'Tarjeta contra entrega': 'Card on delivery',
+  'Escribe un teléfono válido de al menos 8 dígitos.': 'Enter a valid phone number with at least 8 digits.',
+  'Pendiente de envío': 'Pending delivery',
+  'Pedido listo para enviar': 'Order ready to send',
+  'Guardamos tu pedido en este dispositivo. El restaurante lo recibirá únicamente cuando toques la opción de enviarlo por WhatsApp.': 'Your order is saved on this device. The restaurant will receive it only when you send it through WhatsApp.',
+  'Cliente': 'Customer',
+  'Pago': 'Payment',
+  'Enviar pedido por WhatsApp': 'Send order on WhatsApp',
+  'Volver al menú': 'Back to menu',
+  'Cerrar menú': 'Close menu',
+  'Abrir menú': 'Open menu',
+  'Delivery seleccionado': 'Delivery selected',
+  'Recoger seleccionado': 'Pickup selected',
+  'Tu pedido está vacío': 'Your order is empty',
+  'Mostrando una selección mientras se carga el menú completo. Si estás abriendo el archivo directamente, inicia un servidor local para consultar las 143 opciones.': 'Showing a selection while the full menu loads. If you opened this file directly, start a local server to browse all 143 options.',
+};
+
+const originalText = new WeakMap();
+const originalAttributes = new WeakMap();
+
+function readPreference(key, fallback) {
+  try { return localStorage.getItem(key) || fallback; } catch { return fallback; }
+}
 
 const state = {
   products: [],
@@ -74,6 +264,7 @@ const state = {
   cart: [],
   orderComment: '',
   mode: 'delivery',
+  language: readPreference(STORAGE_LANGUAGE, 'es') === 'en' ? 'en' : 'es',
   payment: 'cash',
   editingProduct: null,
   editingDraft: null,
@@ -88,14 +279,75 @@ const fallbackProducts = [
   { id: 26, name: '#26 Chop suey de la casa', category_name: 'Chop Suey En Salsa', Price: 3300, units: [{ id: 26, name: 'medio', Price: 3300 }, { id: 272, name: 'entero', Price: 4300 }] },
   { id: 45, name: '#36 Chau min de la casa', category_name: 'Chau Min', Price: 4300, units: [{ id: 45, name: 'medio', Price: 4300 }, { id: 239, name: 'entero', Price: 5300 }] },
   { id: 69, name: '#53 Bistec el primero', category_name: 'Carne De Res', Price: 6900, units: [{ id: 69, name: 'orden', Price: 6900 }] },
-  { id: 120, name: 'Coca', category_name: 'Bebidas', Price: 1200, units: [{ id: 120, name: 'unidad', Price: 1200 }] },
+  { id: 120, name: 'Coca Cola', category_name: 'Bebidas', Price: 1200, units: [{ id: 120, name: 'unidad', Price: 1200 }] },
 ];
 
 const money = (amount) => `₡${Math.round(Number(amount) || 0).toLocaleString('es-CR')}`;
 const cleanText = (value) => String(value ?? '').replace(/[\u200B-\u200D\uFEFF]/g, '').replace(/\s+/g, ' ').trim();
+function productDisplayName(value) {
+  const source = cleanText(value).replace(/^#[^\s]+\s*/, '').toLocaleLowerCase('es-CR');
+  if (!source) return '';
+  const normalized = source
+    .replace(/\s*,\s*/g, ', ')
+    .replace(/\bcamarones frito\b/g, 'camarones fritos')
+    .replace(/\bel primero\b/g, 'El Primero')
+    .replace(/\bsaho fan\b/g, 'Saho Fan')
+    .replace(/\bcoca cola zero\b/g, 'Coca Cola Zero')
+    .replace(/\bcoca cola\b/g, 'Coca Cola')
+    .replace(/\bfanta kolita\b/g, 'Fanta Kolita')
+    .replace(/\bfanta naranja\b/g, 'Fanta Naranja')
+    .replace(/\bfanta uva\b/g, 'Fanta Uva')
+    .replace(/\btropical de frutas\b/g, 'Tropical de Frutas')
+    .replace(/\bpepsi\b/g, 'Pepsi')
+    .replace(/\b7up\b/g, '7UP')
+    .replace(/\b79s\b/g, '79S')
+    .replace(/\bchina\b/g, 'China')
+    .replace(/\b(\d+(?:\.\d+)?)\s*l\b/g, '$1 L')
+    .replace(/^sopa de wan tan de c$/, 'Sopa de wan tan de C');
+  return `${normalized.charAt(0).toLocaleUpperCase('es-CR')}${normalized.slice(1)}`;
+}
 const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 const slug = (value) => cleanText(value).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 const reducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+const t = (text) => state.language === 'en' ? (EN[text] || text) : text;
+const categoryLabel = (category) => t(CATEGORY_META[category]?.label || cleanText(category));
+const unitLabel = (unit) => t(cleanText(unit));
+const extraLabel = (extra) => t(cleanText(extra.name));
+
+function savePreference(key, value) {
+  try { localStorage.setItem(key, value); } catch { /* The current session still keeps the preference. */ }
+}
+
+function translateStaticContent() {
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  let node;
+  while ((node = walker.nextNode())) {
+    if (!originalText.has(node)) originalText.set(node, node.nodeValue);
+    const source = originalText.get(node);
+    const value = cleanText(source);
+    if (!value) continue;
+    const leading = source.match(/^\s*/)?.[0] || '';
+    const trailing = source.match(/\s*$/)?.[0] || '';
+    node.nodeValue = `${leading}${t(value)}${trailing}`;
+  }
+  document.querySelectorAll('[aria-label], [placeholder]').forEach((element) => {
+    if (element.matches('#headerCartButton, #mobileCartButton, #mobileNavToggle, #languageToggle')) return;
+    if (!originalAttributes.has(element)) originalAttributes.set(element, {});
+    const stored = originalAttributes.get(element);
+    ['aria-label', 'placeholder'].forEach((attribute) => {
+      if (!element.hasAttribute(attribute)) return;
+      if (!(attribute in stored)) stored[attribute] = element.getAttribute(attribute);
+      element.setAttribute(attribute, t(stored[attribute]));
+    });
+  });
+  document.documentElement.lang = state.language;
+  document.title = t('El Primero | Cocina asiática');
+  document.querySelector('meta[name="description"]')?.setAttribute('content', t('Pide comida asiática de El Primero para recoger o recibir en casa.'));
+  const languageToggle = document.getElementById('languageToggle');
+  languageToggle.textContent = state.language === 'es' ? 'EN' : 'ES';
+  languageToggle.setAttribute('aria-label', state.language === 'es' ? 'Cambiar idioma a inglés' : 'Switch language to Spanish');
+}
+
 
 function extrasForCategory(category, selectedIds = null) {
   const allowedIds = EXTRA_IDS_BY_CATEGORY[cleanText(category)] || [];
@@ -118,7 +370,7 @@ function normalizeCartLine(line) {
   return {
     key: JSON.stringify([productId, unitId, extras.map((extra) => extra.id).sort()]),
     productId,
-    productName: cleanText(line.productName) || 'Producto',
+    productName: productDisplayName(line.productName) || 'Producto',
     category,
     unitId,
     unitName: cleanText(line.unitName) || 'unidad',
@@ -225,27 +477,13 @@ function orderTotals() {
 }
 
 function renderCategoryButtons() {
-  const markup = categoryNames().map((category) => {
-    const meta = CATEGORY_META[category] || { label: category, glyph: '•' };
+  const categories = categoryNames();
+  document.getElementById('categoryNav').innerHTML = categories.map((category) => {
+    const meta = CATEGORY_META[category] || { glyph: '•' };
     const active = state.activeCategory === category;
-    return `<button class="category-button ${active ? 'is-active' : ''}" data-category="${escapeHtml(category)}" aria-pressed="${active}" type="button"><span class="category-glyph" aria-hidden="true">${meta.glyph}</span><span>${escapeHtml(meta.label)}</span></button>`;
+    return `<button class="category-button ${active ? 'is-active' : ''}" data-category="${escapeHtml(category)}" aria-pressed="${active}" type="button"><span class="category-glyph" aria-hidden="true">${meta.glyph}</span><span>${escapeHtml(categoryLabel(category))}</span></button>`;
   }).join('');
-  document.getElementById('categoryNav').innerHTML = markup;
-  document.getElementById('mobileCategoryNav').innerHTML = markup;
-  requestAnimationFrame(() => {
-    const mobileScroller = document.getElementById('mobileCategoryNav');
-    const activeButton = mobileScroller.querySelector('.category-button.is-active');
-    if (!activeButton || mobileScroller.clientWidth === 0 || mobileScroller.scrollWidth <= mobileScroller.clientWidth) return;
-    const scrollerRect = mobileScroller.getBoundingClientRect();
-    const activeRect = activeButton.getBoundingClientRect();
-    const maxScrollLeft = mobileScroller.scrollWidth - mobileScroller.clientWidth;
-    const targetScrollLeft = mobileScroller.scrollLeft + activeRect.left - scrollerRect.left - (mobileScroller.clientWidth - activeRect.width) / 2;
-    mobileScroller.scrollTo({
-      left: Math.max(0, Math.min(targetScrollLeft, maxScrollLeft)),
-      top: mobileScroller.scrollTop,
-      behavior: reducedMotion() ? 'auto' : 'smooth',
-    });
-  });
+  document.getElementById('mobileCategorySelect').innerHTML = categories.map((category) => `<option value="${escapeHtml(category)}" ${state.activeCategory === category ? 'selected' : ''}>${escapeHtml(categoryLabel(category))}</option>`).join('');
 }
 
 function setMenuAnnouncement(message) {
@@ -261,14 +499,14 @@ function renderCategoryIndex() {
   }, {});
   const grid = document.getElementById('productGrid');
   grid.className = 'category-index';
-  setMenuAnnouncement(`${categories.length} categorías disponibles`);
-  document.getElementById('menuViewHint').textContent = 'Explora por categoría o busca directamente un plato.';
+  setMenuAnnouncement('');
+  document.getElementById('menuViewHint').textContent = t('Explora por categoría o busca directamente un plato.');
   grid.innerHTML = categories.map((category) => {
-    const meta = CATEGORY_META[category] || { label: category, glyph: '•' };
+    const meta = CATEGORY_META[category] || { glyph: '•' };
     const count = counts[category] || 0;
     return `<button class="category-index-card" data-category="${escapeHtml(category)}" type="button">
       <span class="category-index-icon" aria-hidden="true">${meta.glyph}</span>
-      <span class="category-index-copy"><strong>${escapeHtml(meta.label)}</strong><small>${count} ${count === 1 ? 'opción' : 'opciones'}</small></span>
+      <span class="category-index-copy"><strong>${escapeHtml(categoryLabel(category))}</strong><small>${count} ${t(count === 1 ? 'opción' : 'opciones')}</small></span>
       <span class="category-index-arrow" aria-hidden="true">↗</span>
     </button>`;
   }).join('');
@@ -276,14 +514,14 @@ function renderCategoryIndex() {
 
 function renderProducts() {
   const products = getVisibleProducts();
-  const categoryLabel = CATEGORY_META[state.activeCategory]?.label || state.activeCategory;
+  const activeCategoryLabel = categoryLabel(state.activeCategory);
   const queryLabel = cleanText(state.query);
-  setMenuAnnouncement(`${products.length} ${products.length === 1 ? 'opción' : 'opciones'}${queryLabel ? ` para ${queryLabel}` : ` en ${categoryLabel}`}`);
+  setMenuAnnouncement(`${products.length} ${t(products.length === 1 ? 'opción' : 'opciones')}${queryLabel ? ` ${t('para')} ${queryLabel}` : ` ${t('en')} ${activeCategoryLabel}`}`);
   const grid = document.getElementById('productGrid');
   grid.className = 'product-grid';
-  document.getElementById('menuViewHint').textContent = queryLabel ? `Resultados para “${queryLabel}”.` : 'Selecciona un plato para elegir tamaño, extras y cantidad.';
+  document.getElementById('menuViewHint').textContent = queryLabel ? `${t('Resultados para')} “${queryLabel}”.` : t('Selecciona un plato para elegir tamaño, extras y cantidad.');
   if (!products.length) {
-    grid.innerHTML = '<div class="empty-results"><strong>No encontramos ese antojo.</strong><span>Prueba con otro nombre o vuelve a ver todo el menú.</span></div>';
+    grid.innerHTML = `<div class="empty-results"><strong>${t('No encontramos ese antojo.')}</strong><span>${t('Prueba con otro nombre o vuelve a ver todo el menú.')}</span></div>`;
     return;
   }
   grid.innerHTML = products.map((product) => {
@@ -291,13 +529,13 @@ function renderProducts() {
     const price = Math.min(...units.map((unit) => unit.Price));
     const quantity = cartQuantityFor(product.id);
     const productName = cleanText(product.name);
-    const productLabel = `Personalizar ${productName}${quantity ? `, ${quantity} en tu pedido` : ''}`;
+    const productLabel = `${t('Personalizar')} ${productName}${quantity ? `, ${quantity} ${t('en tu pedido')}` : ''}`;
     return `<button class="product-card" data-product-id="${product.id}" type="button" aria-label="${escapeHtml(productLabel)}">
       <span class="product-body">
-        <span class="product-category">${escapeHtml(CATEGORY_META[cleanText(product.category_name)]?.label || cleanText(product.category_name))}</span>
+        <span class="product-category">${escapeHtml(categoryLabel(cleanText(product.category_name)))}</span>
         <span class="product-card-title">${escapeHtml(productName)}</span>
         <span class="product-footer">
-          <span class="product-price"><span>${units.length > 1 ? 'Desde' : 'Precio'}</span><strong>${money(price)}</strong></span>
+          <span class="product-price"><span>${t(units.length > 1 ? 'Desde' : 'Precio')}</span><strong>${money(price)}</strong></span>
           <span class="product-footer-actions">
             ${quantity ? `<span class="product-quantity" aria-hidden="true">${quantity}</span>` : ''}
             <span class="add-product" aria-hidden="true">+</span>
@@ -315,12 +553,12 @@ function renderFeaturedProducts() {
     const units = productUnits(product);
     const price = Math.min(...units.map((unit) => unit.Price));
     const productName = cleanText(product.name);
-    return `<button class="featured-card" data-product-id="${product.id}" type="button" aria-label="Personalizar ${escapeHtml(productName)}">
-      <span class="featured-image"><img src="${featured.image}" alt="${featured.alt}" loading="lazy" width="900" height="650"></span>
+    return `<button class="featured-card" data-product-id="${product.id}" type="button" aria-label="${t('Personalizar')} ${escapeHtml(productName)}">
+      <span class="featured-image"><img src="${featured.image}" alt="${t(featured.alt)}" loading="lazy" width="900" height="650"></span>
       <span class="featured-card-body">
-        <span class="featured-card-kicker">${escapeHtml(CATEGORY_META[cleanText(product.category_name)]?.label || cleanText(product.category_name))}</span>
+        <span class="featured-card-kicker">${escapeHtml(categoryLabel(cleanText(product.category_name)))}</span>
         <span class="featured-card-title">${escapeHtml(productName)}</span>
-        <span class="featured-card-footer"><span>${units.length > 1 ? 'Desde' : 'Precio'} <strong>${money(price)}</strong></span><span aria-hidden="true">+</span></span>
+        <span class="featured-card-footer"><span>${t(units.length > 1 ? 'Desde' : 'Precio')} <strong>${money(price)}</strong></span><span aria-hidden="true">+</span></span>
       </span>
     </button>`;
   }).join('');
@@ -334,59 +572,59 @@ function renderMenuView() {
 
 function orderLineMarkup(line, index, context = 'panel') {
   const selectedExtras = extrasForCategory(line.category, (line.extras || []).map((extra) => extra?.id));
-  const extras = selectedExtras.length ? ` · ${selectedExtras.map((extra) => escapeHtml(extra.name)).join(', ')}` : '';
+  const details = [slug(line.unitName) === 'orden' ? '' : unitLabel(line.unitName), ...selectedExtras.map(extraLabel)].filter(Boolean).map(escapeHtml).join(' · ');
   const label = escapeHtml(line.productName);
   return `<div class="order-line ${context === 'modal' ? 'order-line--modal' : ''}">
-    <div>
-      <h3>${label}</h3>
-      <div class="order-line-meta">${escapeHtml(line.unitName)}${extras}</div>
+    <h3>${label}</h3>
+    <span class="order-line-price">${money(lineUnitTotal(line))}</span>
+    <div class="order-line-footer">
+      <div class="order-line-meta">${details}</div>
       <div class="quantity-control">
-        <button data-cart-action="decrease" data-line-index="${index}" data-line-key="${escapeHtml(line.key)}" type="button" aria-label="Disminuir cantidad de ${label}">−</button>
-        <span aria-label="Cantidad: ${line.quantity}">${line.quantity}</span>
-        <button data-cart-action="increase" data-line-index="${index}" data-line-key="${escapeHtml(line.key)}" type="button" aria-label="Aumentar cantidad de ${label}">+</button>
-        <button class="remove-line" data-cart-action="remove" data-line-index="${index}" data-line-key="${escapeHtml(line.key)}" type="button" aria-label="Quitar ${label}">Quitar</button>
+        <button data-cart-action="decrease" data-line-index="${index}" data-line-key="${escapeHtml(line.key)}" type="button" aria-label="${t('Disminuir cantidad de')} ${label}">−</button>
+        <span aria-label="${t('Cantidad')}: ${line.quantity}">${line.quantity}</span>
+        <button data-cart-action="increase" data-line-index="${index}" data-line-key="${escapeHtml(line.key)}" type="button" aria-label="${t('Aumentar cantidad de')} ${label}">+</button>
+        <button class="remove-line" data-cart-action="remove" data-line-index="${index}" data-line-key="${escapeHtml(line.key)}" type="button" aria-label="${t('Quitar')} ${label}">×</button>
       </div>
     </div>
-    <span class="order-line-price">${money(lineUnitTotal(line))}</span>
   </div>`;
 }
 
 function orderCommentMarkup(context) {
   const id = context === 'modal' ? 'orderCommentModal' : 'orderCommentPanel';
-  return `<label class="order-comment order-comment--${context}" for="${id}"><span>Comentario para el pedido (opcional)</span><input id="${id}" data-order-comment type="text" maxlength="180" value="${escapeHtml(state.orderComment)}" placeholder="Ej: sin cubiertos o indicaciones de entrega" /></label>`;
+  return `<label class="order-comment order-comment--${context}" for="${id}"><span>${t('Comentario para el pedido (opcional)')}</span><input id="${id}" data-order-comment type="text" maxlength="180" value="${escapeHtml(state.orderComment)}" placeholder="${t('Ej: sin cubiertos o indicaciones de entrega')}" /></label>`;
 }
 
 function summaryMarkup(totals) {
-  return `<div class="order-summary"><div class="summary-row"><span>Subtotal</span><strong>${money(totals.subtotal)}</strong></div>${state.mode === 'delivery' ? `<div class="summary-row"><span>Envío</span><strong>${totals.deliveryFee ? money(totals.deliveryFee) : 'Gratis'}</strong></div>` : ''}<div class="summary-row summary-row--discount"><span>Descuento (${DISCOUNT_PERCENT}%)</span><strong>−${money(totals.discount)}</strong></div><div class="summary-row summary-row--total"><span>Total</span><strong>${money(totals.total)}</strong></div></div>`;
+  return `<div class="order-summary"><div class="summary-row"><span>${t('Subtotal')}</span><strong>${money(totals.subtotal)}</strong></div>${state.mode === 'delivery' ? `<div class="summary-row"><span>${t('Envío')}</span><strong>${totals.deliveryFee ? money(totals.deliveryFee) : t('Gratis')}</strong></div>` : ''}<div class="summary-row summary-row--discount"><span>${t('Descuento')} (${DISCOUNT_PERCENT}%)</span><strong>−${money(totals.discount)}</strong></div><div class="summary-row summary-row--total"><span>${t('Total')}</span><strong>${money(totals.total)}</strong></div></div>`;
 }
 
 function renderOrderPanel() {
   const panel = document.getElementById('orderPanel');
   const count = state.cart.reduce((sum, line) => sum + Number(line.quantity || 0), 0);
   const totals = orderTotals();
+  const modeLabel = state.mode === 'delivery' ? 'Delivery' : t('Recoger');
   if (!state.cart.length) {
-    panel.innerHTML = `<div class="order-panel-head"><div><span class="order-mode-label">${state.mode === 'delivery' ? 'Delivery' : 'Recoger'}</span><h2 id="orderPanelTitle">Tu pedido</h2></div><span class="header-cart-count" aria-label="0 artículos">0</span></div><div class="order-empty"><div><div class="empty-bowl" aria-hidden="true"></div><p>Tu pedido está esperando algo rico. Explora el menú y agrega tus favoritos.</p></div></div>`;
+    panel.innerHTML = `<div class="order-panel-head"><div><span class="order-mode-label">${modeLabel}</span><h2 id="orderPanelTitle">${t('Tu pedido')}</h2></div><span class="header-cart-count" aria-label="0 ${t('artículos')}">0</span></div><div class="order-empty"><div><div class="empty-bowl" aria-hidden="true"></div><p>${t('Tu pedido está esperando algo rico. Explora el menú y agrega tus favoritos.')}</p></div></div>`;
     return;
   }
-  panel.innerHTML = `<div class="order-panel-head"><div><span class="order-mode-label">${state.mode === 'delivery' ? 'Delivery' : 'Recoger'}</span><h2 id="orderPanelTitle">Tu pedido</h2></div><span class="header-cart-count" aria-label="${count} artículos">${count}</span></div>
+  panel.innerHTML = `<div class="order-panel-head"><div><span class="order-mode-label">${modeLabel}</span><h2 id="orderPanelTitle">${t('Tu pedido')}</h2></div><span class="header-cart-count" aria-label="${count} ${t('artículos')}">${count}</span></div>
     <div class="order-lines">${state.cart.map((line, index) => orderLineMarkup(line, index)).join('')}</div>
     ${orderCommentMarkup('panel')}
     ${summaryMarkup(totals)}
-    <button class="checkout-button" data-open-checkout type="button">Continuar al checkout <span aria-hidden="true">→</span></button>
-    <p class="cart-help">Puedes ajustar cantidades antes de confirmar.</p>`;
+    <button class="checkout-button" data-open-checkout type="button">${t('Continuar al checkout')} <span aria-hidden="true">→</span></button>`;
 }
 
 function renderCartIndicators() {
   const count = state.cart.reduce((sum, line) => sum + Number(line.quantity || 0), 0);
   const total = orderTotals().total;
-  const itemLabel = count === 1 ? 'artículo' : 'artículos';
+  const itemLabel = t(count === 1 ? 'artículo' : 'artículos');
   const header = document.getElementById('headerCartButton');
   const mobile = document.getElementById('mobileCartButton');
   document.getElementById('headerCartCount').textContent = count;
   document.getElementById('mobileCartCount').textContent = count;
   document.getElementById('mobileCartTotal').textContent = money(total);
-  header.setAttribute('aria-label', `Mi pedido, ${count} ${itemLabel}, total ${money(total)}`);
-  mobile.setAttribute('aria-label', `Ver mi pedido, ${count} ${itemLabel}, total ${money(total)}`);
+  header.setAttribute('aria-label', `${t('Mi pedido')}, ${count} ${itemLabel}, ${t('Total').toLowerCase()} ${money(total)}`);
+  mobile.setAttribute('aria-label', `${t('Ver mi pedido')}, ${count} ${itemLabel}, ${t('Total').toLowerCase()} ${money(total)}`);
   mobile.hidden = count === 0;
 }
 
@@ -402,6 +640,7 @@ function renderAll() {
     button.setAttribute('aria-checked', String(active));
     button.tabIndex = active ? 0 : -1;
   });
+  translateStaticContent();
 }
 
 function getFocusableElements(container) {
@@ -527,13 +766,14 @@ function productModalMarkup() {
   const units = productUnits(product);
   const extras = extrasForCategory(product.category_name);
   const selectedUnit = units.find((unit) => String(unit.id) === String(state.editingDraft.unitId)) || units[0];
+  const productName = escapeHtml(cleanText(product.name));
   return `<div class="modal-backdrop is-bottom" id="productModal"><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="productModalTitle" tabindex="-1">
-    <div class="modal-head"><div><p class="modal-kicker">Personaliza tu pedido</p><h2 id="productModalTitle">${escapeHtml(cleanText(product.name))}</h2></div><button class="modal-close" data-close-modal type="button" aria-label="Cerrar">×</button></div>
-    <div class="modal-content"><div class="modal-product-intro"><p>${escapeHtml(CATEGORY_META[cleanText(product.category_name)]?.label || cleanText(product.category_name))}</p></div>
-      ${units.length > 1 ? `<fieldset class="choice-group"><legend class="choice-label">Elige el tamaño</legend><div class="unit-options" role="radiogroup" aria-label="Tamaño de ${escapeHtml(cleanText(product.name))}">${units.map((unit) => `<button class="unit-option ${String(unit.id) === String(selectedUnit.id) ? 'is-selected' : ''}" data-unit-id="${escapeHtml(unit.id)}" role="radio" aria-checked="${String(unit.id) === String(selectedUnit.id)}" type="button"><strong>${escapeHtml(unit.name)}</strong><span>${money(unit.Price)}</span></button>`).join('')}</div></fieldset>` : `<div class="choice-label">${escapeHtml(selectedUnit.name)} · ${money(selectedUnit.Price)}</div>`}
-      ${extras.length ? `<fieldset class="choice-group"><legend class="choice-label">Extras (opcional)</legend><div class="extras-list">${extras.map((extra) => `<label class="extra-option"><span><input type="checkbox" data-extra-id="${extra.id}" ${state.editingDraft.extras.includes(extra.id) ? 'checked' : ''} />${escapeHtml(extra.name)}</span><span class="extra-price">+${money(extra.price)}</span></label>`).join('')}</div></fieldset>` : ''}
-      <div class="modal-qty-row"><span id="quantityLabel">Cantidad</span><div class="modal-quantity" aria-labelledby="quantityLabel"><button data-product-quantity="decrease" type="button" aria-label="Disminuir cantidad">−</button><strong data-product-quantity-value aria-live="polite">${state.editingDraft.quantity}</strong><button data-product-quantity="increase" type="button" aria-label="Aumentar cantidad">+</button></div></div>
-      <div class="modal-actions"><span class="modal-total"><span>Total</span><strong data-product-total aria-live="polite" aria-atomic="true">${money(currentDraftPrice())}</strong></span><button class="modal-submit" id="addToCartButton" type="button">Agregar al pedido</button></div>
+    <div class="modal-head"><div><p class="modal-kicker">${t('Personaliza tu pedido')}</p><h2 id="productModalTitle">${productName}</h2></div><button class="modal-close" data-close-modal type="button" aria-label="${t('Cerrar')}">×</button></div>
+    <div class="modal-content"><div class="modal-product-intro"><p>${escapeHtml(categoryLabel(cleanText(product.category_name)))}</p></div>
+      ${units.length > 1 ? `<fieldset class="choice-group"><legend class="choice-label">${t('Elige el tamaño')}</legend><div class="unit-options" role="radiogroup" aria-label="${t('Tamaño de')} ${productName}">${units.map((unit) => `<button class="unit-option ${String(unit.id) === String(selectedUnit.id) ? 'is-selected' : ''}" data-unit-id="${escapeHtml(unit.id)}" role="radio" aria-checked="${String(unit.id) === String(selectedUnit.id)}" type="button"><strong>${escapeHtml(unitLabel(unit.name))}</strong><span>${money(unit.Price)}</span></button>`).join('')}</div></fieldset>` : `<div class="choice-label">${escapeHtml(unitLabel(selectedUnit.name))} · ${money(selectedUnit.Price)}</div>`}
+      ${extras.length ? `<fieldset class="choice-group"><legend class="choice-label">${t('Extras (opcional)')}</legend><div class="extras-list">${extras.map((extra) => `<label class="extra-option"><span><input type="checkbox" data-extra-id="${extra.id}" ${state.editingDraft.extras.includes(extra.id) ? 'checked' : ''} />${escapeHtml(extraLabel(extra))}</span><span class="extra-price">+${money(extra.price)}</span></label>`).join('')}</div></fieldset>` : ''}
+      <div class="modal-qty-row"><span id="quantityLabel">${t('Cantidad')}</span><div class="modal-quantity" aria-labelledby="quantityLabel"><button data-product-quantity="decrease" type="button" aria-label="${t('Disminuir cantidad')}">−</button><strong data-product-quantity-value aria-live="polite">${state.editingDraft.quantity}</strong><button data-product-quantity="increase" type="button" aria-label="${t('Aumentar cantidad')}">+</button></div></div>
+      <div class="modal-actions"><span class="modal-total"><span>${t('Total')}</span><strong data-product-total aria-live="polite" aria-atomic="true">${money(currentDraftPrice())}</strong></span><button class="modal-submit" id="addToCartButton" type="button">${t('Agregar al pedido')}</button></div>
     </div></section></div>`;
 }
 
@@ -572,7 +812,7 @@ function addDraftToCart() {
   closeModal();
   renderAll();
   document.querySelector(`[data-product-id="${product.id}"]`)?.focus({ preventScroll: true });
-  showToast('Agregado al pedido');
+  showToast(t('Agregado al pedido'));
 }
 
 function changeLine(index, action) {
@@ -587,7 +827,7 @@ function changeLine(index, action) {
 }
 
 function cartModalMarkup() {
-  return `<div class="modal-backdrop is-bottom" id="cartModal"><section class="modal-card modal-card--narrow" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle" tabindex="-1"><div class="modal-head"><div><p class="modal-kicker">Antes de confirmar</p><h2 id="cartModalTitle">Tu pedido</h2></div><button class="modal-close" data-close-modal type="button" aria-label="Cerrar">×</button></div><div class="modal-content"><div class="order-lines order-lines--modal">${state.cart.map((line, index) => orderLineMarkup(line, index, 'modal')).join('')}</div>${orderCommentMarkup('modal')}${summaryMarkup(orderTotals())}<button class="modal-submit" data-open-checkout type="button">Continuar al checkout <span aria-hidden="true">→</span></button></div></section></div>`;
+  return `<div class="modal-backdrop is-bottom" id="cartModal"><section class="modal-card modal-card--narrow" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle" tabindex="-1"><div class="modal-head"><div><p class="modal-kicker">${t('Antes de confirmar')}</p><h2 id="cartModalTitle">${t('Tu pedido')}</h2></div><button class="modal-close" data-close-modal type="button" aria-label="${t('Cerrar')}">×</button></div><div class="modal-content"><div class="order-lines order-lines--modal">${state.cart.map((line, index) => orderLineMarkup(line, index, 'modal')).join('')}</div>${orderCommentMarkup('modal')}${summaryMarkup(orderTotals())}<button class="modal-submit" data-open-checkout type="button">${t('Continuar al checkout')} <span aria-hidden="true">→</span></button></div></section></div>`;
 }
 
 function openCartModal(trigger = document.activeElement) {
@@ -602,16 +842,30 @@ function checkoutMarkup() {
   const totals = orderTotals();
   const delivery = state.mode === 'delivery';
   const cashSelected = state.payment === 'cash';
-  return `<div class="modal-backdrop is-bottom" id="checkoutModal"><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="checkoutModalTitle" tabindex="-1"><div class="modal-head"><div><p class="modal-kicker">Último paso</p><h2 id="checkoutModalTitle">Confirmar pedido</h2></div><button class="modal-close" data-close-modal type="button" aria-label="Cerrar checkout">×</button></div><div class="modal-content"><div class="checkout-layout"><form class="checkout-form" id="checkoutForm" novalidate><div class="checkout-mode-note">${delivery ? 'Delivery seleccionado · envío gratis' : 'Recoger seleccionado · te esperamos en el restaurante'}</div><label class="field-label" for="checkoutName">Nombre *<input id="checkoutName" name="name" required minlength="2" placeholder="Tu nombre" autocomplete="name" /></label><label class="field-label" for="checkoutPhone">Teléfono *<input id="checkoutPhone" name="phone" required type="tel" placeholder="8888-8888" autocomplete="tel" inputmode="tel" /></label>${delivery ? '<label class="field-label" for="checkoutAddress">Dirección de entrega *<textarea id="checkoutAddress" name="address" required placeholder="Provincia, cantón, señas exactas..." autocomplete="street-address"></textarea></label>' : ''}<fieldset class="payment-fieldset"><legend class="choice-label">Forma de pago</legend><div class="payment-options"><label class="payment-option"><input type="radio" name="payment" value="cash" ${cashSelected ? 'checked' : ''} /><span><strong>Efectivo</strong><small>Si necesitas cambio, indícalo abajo.</small></span></label><label class="payment-option"><input type="radio" name="payment" value="card" ${state.payment === 'card' ? 'checked' : ''} /><span><strong>Tarjeta</strong><small>Pago contra entrega.</small></span></label><label class="payment-option"><input type="radio" name="payment" value="sinpe" ${state.payment === 'sinpe' ? 'checked' : ''} /><span><strong>SINPE Móvil</strong><small>El restaurante te indica los datos al confirmar.</small></span></label></div></fieldset><div class="cash-field" id="cashField" ${cashSelected ? '' : 'hidden'} aria-hidden="${!cashSelected}"><label class="field-label" for="cashAmount">¿Con cuánto pagarás? (opcional)<input id="cashAmount" name="cashAmount" type="number" min="${totals.total}" step="1" inputmode="decimal" aria-describedby="cashAmountHint" placeholder="Ej: 10000" ${cashSelected ? '' : 'disabled'} /></label><p id="cashAmountHint" class="field-hint">Te ayudaremos a calcular el cambio.</p></div><button class="modal-submit checkout-submit" id="submitOrderButton" type="submit">Preparar pedido <span aria-hidden="true">→</span></button><p class="checkout-disclaimer">Al continuar guardaremos tu pedido en este dispositivo y podrás enviarlo al restaurante por WhatsApp.</p></form><aside class="checkout-side" aria-label="Resumen del pedido"><h3>Resumen</h3>${state.cart.map((line) => `<div class="checkout-line"><span>${line.quantity}× ${escapeHtml(line.productName)}</span><strong>${money(lineUnitTotal(line))}</strong></div>`).join('')}${summaryMarkup(totals)}</aside></div></div></section></div>`;
+  return `<div class="modal-backdrop is-bottom" id="checkoutModal"><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="checkoutModalTitle" tabindex="-1">
+    <div class="modal-head"><h2 id="checkoutModalTitle">${t('Confirmar pedido')}</h2><button class="modal-close" data-close-modal type="button" aria-label="${t('Cerrar checkout')}">×</button></div>
+    <div class="modal-content"><div class="checkout-layout"><form class="checkout-form" id="checkoutForm" novalidate>
+      <div class="checkout-mode-note">${t(delivery ? 'Delivery seleccionado · envío gratis' : 'Recoger seleccionado · te esperamos en el restaurante')}</div>
+      <label class="field-label" for="checkoutName">${t('Nombre')} *<input id="checkoutName" name="name" required minlength="2" placeholder="${t('Tu nombre')}" autocomplete="name" /></label>
+      <label class="field-label" for="checkoutPhone">${t('Teléfono')} *<input id="checkoutPhone" name="phone" required type="tel" placeholder="8888-8888" autocomplete="tel" inputmode="tel" /></label>
+      ${delivery ? `<label class="field-label" for="checkoutAddress">${t('Dirección de entrega')} *<textarea id="checkoutAddress" name="address" required placeholder="${t('Provincia, cantón, señas exactas...')}" autocomplete="street-address"></textarea></label>` : ''}
+      <fieldset class="payment-fieldset"><legend class="choice-label">${t('Forma de pago')}</legend><div class="payment-options">
+        <label class="payment-option"><input type="radio" name="payment" value="cash" ${cashSelected ? 'checked' : ''} /><span><strong>${t('Efectivo')}</strong><small>${t('Si necesitas cambio, indícalo abajo.')}</small></span></label>
+        <label class="payment-option"><input type="radio" name="payment" value="card" ${state.payment === 'card' ? 'checked' : ''} /><span><strong>${t('Tarjeta')}</strong><small>${t('Pago contra entrega.')}</small></span></label>
+        <label class="payment-option"><input type="radio" name="payment" value="sinpe" ${state.payment === 'sinpe' ? 'checked' : ''} /><span><strong>SINPE Móvil</strong><small>${t('El restaurante te indica los datos al confirmar.')}</small></span></label>
+      </div></fieldset>
+      <div class="cash-field" id="cashField" ${cashSelected ? '' : 'hidden'} aria-hidden="${!cashSelected}"><label class="field-label" for="cashAmount">${t('¿Con cuánto pagarás? (opcional)')}<input id="cashAmount" name="cashAmount" type="number" min="${totals.total}" step="1" inputmode="decimal" aria-describedby="cashAmountHint" placeholder="${t('Ej: 10000')}" ${cashSelected ? '' : 'disabled'} /></label><p id="cashAmountHint" class="field-hint">${t('Te ayudaremos a calcular el cambio.')}</p></div>
+      <button class="modal-submit checkout-submit" id="submitOrderButton" type="submit">${t('Preparar pedido')} <span aria-hidden="true">→</span></button><p class="checkout-disclaimer">${t('Al continuar guardaremos tu pedido en este dispositivo y podrás enviarlo al restaurante por WhatsApp.')}</p>
+    </form><aside class="checkout-side" aria-label="${t('Resumen del pedido')}"><h3>${t('Resumen')}</h3>${state.cart.map((line) => `<div class="checkout-line"><span>${line.quantity}× ${escapeHtml(line.productName)}</span><strong>${money(lineUnitTotal(line))}</strong></div>`).join('')}${summaryMarkup(totals)}</aside></div></div></section></div>`;
 }
 
 function openCheckout(trigger = document.activeElement) {
   if (!state.cart.length) return;
-  renderModal('checkout', checkoutMarkup(), { trigger, focus: { kind: 'id', value: 'checkoutName' }, closeOnBackdrop: false, closeOnEscape: false });
+  renderModal('checkout', checkoutMarkup(), { trigger, focus: { kind: 'id', value: 'checkoutName' }, closeOnBackdrop: true, closeOnEscape: false });
 }
 
 function paymentLabel(payment) {
-  return { cash: 'Efectivo', card: 'Tarjeta contra entrega', sinpe: 'SINPE Móvil' }[payment] || 'Efectivo';
+  return { cash: t('Efectivo'), card: t('Tarjeta contra entrega'), sinpe: 'SINPE Móvil' }[payment] || t('Efectivo');
 }
 
 function setFieldValidity(field, message) {
@@ -625,12 +879,12 @@ function validateCheckout(form) {
   const fields = [...form.querySelectorAll('input, textarea')];
   fields.forEach((field) => setFieldValidity(field, ''));
   const phone = form.elements.phone;
-  if (phone && phone.value && phone.value.replace(/\D/g, '').length < 8) setFieldValidity(phone, 'Escribe un teléfono válido de al menos 8 dígitos.');
+  if (phone && phone.value && phone.value.replace(/\D/g, '').length < 8) setFieldValidity(phone, t('Escribe un teléfono válido de al menos 8 dígitos.'));
   const payment = form.elements.payment?.value || 'cash';
   const cash = form.elements.cashAmount;
   if (payment === 'cash' && cash?.value) {
     const amount = Number(cash.value);
-    if (!Number.isFinite(amount) || amount < orderTotals().total) setFieldValidity(cash, `El monto debe ser igual o mayor a ${money(orderTotals().total)}.`);
+    if (!Number.isFinite(amount) || amount < orderTotals().total) setFieldValidity(cash, state.language === 'en' ? `Amount must be at least ${money(orderTotals().total)}.` : `El monto debe ser igual o mayor a ${money(orderTotals().total)}.`);
   }
   if (!form.reportValidity()) {
     form.querySelector(':invalid')?.focus({ preventScroll: true });
@@ -648,7 +902,7 @@ function registerOrder(form) {
   const order = {
     id: `EP-${String(Date.now()).slice(-6)}`,
     createdAt: new Date().toISOString(),
-    status: 'Pendiente de envío',
+    status: t('Pendiente de envío'),
     mode: state.mode,
     payment,
     paymentLabel: paymentLabel(payment),
@@ -674,13 +928,16 @@ function registerOrder(form) {
 function buildWhatsAppMessage(order) {
   const items = order.items.map((line) => {
     const selectedExtras = extrasForCategory(line.category, (line.extras || []).map((extra) => extra?.id));
-    const extras = selectedExtras.length ? `\n   Extras: ${selectedExtras.map((extra) => extra.name).join(', ')}` : '';
-    return `${line.quantity} x ${line.productName}\n   Tamaño: ${line.unitName}${extras}\n   Importe: ${money(lineUnitTotal(line))}`;
+    const extras = selectedExtras.length ? `\n   ${state.language === 'en' ? 'Extras' : 'Extras'}: ${selectedExtras.map((extra) => extraLabel(extra)).join(', ')}` : '';
+    return state.language === 'en'
+      ? `${line.quantity} x ${line.productName}\n   Size: ${unitLabel(line.unitName)}${extras}\n   Amount: ${money(lineUnitTotal(line))}`
+      : `${line.quantity} x ${line.productName}\n   Tamaño: ${line.unitName}${extras}\n   Importe: ${money(lineUnitTotal(line))}`;
   }).join('\n\n');
   const totals = order.totals;
-  const delivery = totals.deliveryFee ? money(totals.deliveryFee) : 'Gratis';
-  const cash = order.cashAmount ? `\nPaga con: ${money(order.cashAmount)}\nCambio: ${money(order.changeDue)}` : '';
-  const comment = order.orderNote ? `\nComentario del pedido: ${order.orderNote}` : '';
+  const delivery = totals.deliveryFee ? money(totals.deliveryFee) : t('Gratis');
+  const cash = order.cashAmount ? (state.language === 'en' ? `\nCash: ${money(order.cashAmount)}\nChange: ${money(order.changeDue)}` : `\nPaga con: ${money(order.cashAmount)}\nCambio: ${money(order.changeDue)}`) : '';
+  const comment = order.orderNote ? (state.language === 'en' ? `\nOrder note: ${order.orderNote}` : `\nComentario del pedido: ${order.orderNote}`) : '';
+  if (state.language === 'en') return `Hello, I would like to confirm order ${order.id} at El Primero.\n\nMethod: ${order.mode === 'delivery' ? 'Delivery' : 'Pickup'}\nName: ${order.customer.name}\nPhone: ${order.customer.phone}${order.customer.address ? `\nAddress: ${order.customer.address}` : ''}\n\n${items}\n\nSubtotal: ${money(totals.subtotal)}\nDiscount: −${money(totals.discount)}\nDelivery: ${delivery}\nTotal: ${money(totals.total)}\n\nPayment method: ${order.paymentLabel}${cash}${comment}`;
   return `Hola, quiero confirmar el pedido ${order.id} en El Primero.\n\nModalidad: ${order.mode === 'delivery' ? 'Delivery' : 'Recoger'}\nNombre: ${order.customer.name}\nTeléfono: ${order.customer.phone}${order.customer.address ? `\nDirección: ${order.customer.address}` : ''}\n\n${items}\n\nSubtotal: ${money(totals.subtotal)}\nDescuento: −${money(totals.discount)}\nEnvío: ${delivery}\nTotal: ${money(totals.total)}\n\nForma de pago: ${order.paymentLabel}${cash}${comment}`;
 }
 
@@ -689,12 +946,12 @@ function whatsappUrl(order) {
 }
 
 function renderConfirmation(order) {
-  renderModal('confirmation', `<div class="modal-backdrop" id="confirmationModal"><section class="modal-card modal-card--narrow confirmation" role="dialog" aria-modal="true" aria-labelledby="confirmationTitle" tabindex="-1"><div class="modal-content"><div class="confirmation-seal" aria-hidden="true">✓</div><h2 id="confirmationTitle">Pedido listo para enviar</h2><p>Guardamos tu pedido en este dispositivo. El restaurante lo recibirá únicamente cuando toques la opción de enviarlo por WhatsApp.</p><span class="order-reference">${escapeHtml(order.id)} · ${order.mode === 'delivery' ? 'Delivery' : 'Recoger'}</span><div class="confirmation-summary"><div class="summary-row"><span>Cliente</span><strong>${escapeHtml(order.customer.name)}</strong></div><div class="summary-row"><span>Pago</span><strong>${escapeHtml(order.paymentLabel)}</strong></div><div class="summary-row summary-row--total"><span>Total</span><strong>${money(order.totals.total)}</strong></div></div><div class="confirmation-actions"><a class="whatsapp-button" id="whatsappButton" href="${escapeHtml(whatsappUrl(order))}" target="_blank" rel="noreferrer noopener">Enviar pedido por WhatsApp ↗</a><button class="continue-button" data-close-modal type="button">Volver al menú</button></div></div></section></div>`, { focus: { kind: 'whatsapp' }, closeOnBackdrop: false, closeOnEscape: false });
+  renderModal('confirmation', `<div class="modal-backdrop" id="confirmationModal"><section class="modal-card modal-card--narrow confirmation" role="dialog" aria-modal="true" aria-labelledby="confirmationTitle" tabindex="-1"><div class="modal-content"><div class="confirmation-seal" aria-hidden="true">✓</div><h2 id="confirmationTitle">${t('Pedido listo para enviar')}</h2><p>${t('Guardamos tu pedido en este dispositivo. El restaurante lo recibirá únicamente cuando toques la opción de enviarlo por WhatsApp.')}</p><span class="order-reference">${escapeHtml(order.id)} · ${order.mode === 'delivery' ? 'Delivery' : t('Recoger')}</span><div class="confirmation-summary"><div class="summary-row"><span>${t('Cliente')}</span><strong>${escapeHtml(order.customer.name)}</strong></div><div class="summary-row"><span>${t('Pago')}</span><strong>${escapeHtml(order.paymentLabel)}</strong></div><div class="summary-row summary-row--total"><span>${t('Total')}</span><strong>${money(order.totals.total)}</strong></div></div><div class="confirmation-actions"><a class="whatsapp-button" id="whatsappButton" href="${escapeHtml(whatsappUrl(order))}" target="_blank" rel="noreferrer noopener">${t('Enviar pedido por WhatsApp')} ↗</a><button class="continue-button" data-close-modal type="button">${t('Volver al menú')}</button></div></div></section></div>`, { focus: { kind: 'whatsapp' }, closeOnBackdrop: false, closeOnEscape: false });
 }
 
 function showToast(message) {
   const toast = document.getElementById('toast');
-  toast.textContent = message;
+  toast.textContent = t(message);
   toast.classList.add('is-visible');
   clearTimeout(state.toastTimer);
   state.toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 2200);
@@ -706,7 +963,7 @@ function setMobileNav(open, restoreFocus = true) {
   state.mobileNavOpen = open;
   document.querySelector('.topbar').classList.toggle('nav-open', open);
   toggle.setAttribute('aria-expanded', String(open));
-  toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+  toggle.setAttribute('aria-label', t(open ? 'Cerrar menú' : 'Abrir menú'));
   if (open) nav.querySelector('a')?.focus({ preventScroll: true });
   else if (restoreFocus) toggle.focus({ preventScroll: true });
 }
@@ -837,6 +1094,11 @@ function bindEvents() {
   if (state.cart.length) state.orderComment = readOrderComment();
   else clearOrderComment();
   saveCart();
+  document.getElementById('languageToggle').addEventListener('click', () => {
+    state.language = state.language === 'es' ? 'en' : 'es';
+    savePreference(STORAGE_LANGUAGE, state.language);
+    renderAll();
+  });
   document.getElementById('searchInput').addEventListener('input', (event) => {
     state.query = event.target.value;
     renderMenuView();
@@ -850,7 +1112,12 @@ function bindEvents() {
   });
   document.getElementById('modeSwitch').addEventListener('keydown', handleModeKeydown);
   document.getElementById('categoryNav').addEventListener('click', handleCategoryClick);
-  document.getElementById('mobileCategoryNav').addEventListener('click', handleCategoryClick);
+  document.getElementById('mobileCategorySelect').addEventListener('change', (event) => {
+    state.activeCategory = event.target.value;
+    state.query = '';
+    document.getElementById('searchInput').value = '';
+    renderAll();
+  });
   document.getElementById('productGrid').addEventListener('click', (event) => {
     const categoryButton = event.target.closest('[data-category]');
     const card = event.target.closest('[data-product-id]');
@@ -876,7 +1143,6 @@ function bindEvents() {
   });
   document.getElementById('orderPanel').addEventListener('input', handleOrderCommentInput);
   document.getElementById('headerCartButton').addEventListener('click', (event) => openCartModal(event.currentTarget));
-  document.getElementById('heroCartButton').addEventListener('click', (event) => openCartModal(event.currentTarget));
   document.getElementById('mobileCartButton').addEventListener('click', (event) => openCartModal(event.currentTarget));
   document.getElementById('mobileNavToggle').addEventListener('click', () => setMobileNav(!state.mobileNavOpen));
   document.getElementById('primaryNav').addEventListener('click', () => setMobileNav(false, false));
@@ -944,10 +1210,10 @@ async function loadMenu() {
     state.products = fallbackProducts;
     const notice = document.getElementById('menuNotice');
     notice.hidden = false;
-    notice.textContent = 'Mostrando una selección mientras se carga el menú completo. Si estás abriendo el archivo directamente, inicia un servidor local para consultar las 143 opciones.';
+    notice.textContent = t('Mostrando una selección mientras se carga el menú completo. Si estás abriendo el archivo directamente, inicia un servidor local para consultar las 143 opciones.');
   }
   state.products = state.products
-    .map((product) => ({ ...product, id: Number(product.id), name: cleanText(product.name), category_name: cleanText(product.category_name), Price: Number(product.Price) }))
+    .map((product) => ({ ...product, id: Number(product.id), name: productDisplayName(product.name), category_name: cleanText(product.category_name), Price: Number(product.Price) }))
     .filter((product) => Number(product.IsStoped || 0) !== 1);
   renderAll();
 }

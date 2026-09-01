@@ -10,15 +10,15 @@
     />
     <title>El Primero | Cocina asiática</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=8" />
+    <script src="app.js?v=10" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#menu">Saltar al menú</a>
     <div class="site-shell">
       <header class="topbar">
         <a class="brand-lockup" href="#inicio" aria-label="El Primero, inicio">
-          <img class="brand-logo brand-logo--small" src="logo.svg" alt="El Primero" />
+          <img class="brand-logo brand-logo--small" src="logo.svg?v=3" alt="El Primero" />
           <span class="brand-copy">
             <strong>EL PRIMERO</strong>
             <span>cocina asiática</span>
@@ -30,12 +30,15 @@
           <a href="#informacion">Información</a>
         </nav>
         <div class="header-actions">
+          <div class="preference-controls" aria-label="Preferencias">
+            <button class="preference-toggle" id="languageToggle" type="button" aria-label="Cambiar idioma a inglés">EN</button>
+          </div>
           <button class="mobile-nav-toggle" id="mobileNavToggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Abrir menú">
             <span class="mobile-nav-toggle-icon" aria-hidden="true"><i></i><i></i></span>
           </button>
           <button class="header-cart" id="headerCartButton" type="button" aria-haspopup="dialog" aria-controls="modalRoot" aria-label="Mi pedido, 0 artículos">
             <span class="cart-icon" aria-hidden="true">⌑</span>
-            <span>Mi pedido</span>
+            <span>Ver mi pedido</span>
             <span class="header-cart-count" id="headerCartCount" aria-hidden="true">0</span>
           </button>
         </div>
@@ -52,9 +55,6 @@
             </p>
             <div class="hero-actions">
               <a class="button button--gold" href="#menu">Explorar menú <span>↘</span></a>
-              <button class="text-button text-button--light" id="heroCartButton" type="button">
-                Ver mi pedido <span>→</span>
-              </button>
             </div>
             <div class="hero-facts" aria-label="Beneficios de pedir en El Primero">
               <div><strong>10%</strong><span>de descuento</span></div>
@@ -70,7 +70,7 @@
             <div class="hero-orbit hero-orbit--one" aria-hidden="true"></div>
             <div class="hero-orbit hero-orbit--two" aria-hidden="true"></div>
             <div class="hero-dots hero-dots--left" aria-hidden="true">••<br />•••</div>
-            <img class="brand-logo brand-logo--hero" src="logo.svg" alt="Logo de El Primero" />
+            <img class="brand-logo brand-logo--hero" src="logo.svg?v=3" alt="Logo de El Primero" />
             <span class="hero-stamp" aria-hidden="true">ASIAN<br /><b>COMFORT</b></span>
             <span class="hero-dots hero-dots--right" aria-hidden="true">•<br />••</span>
           </div>
@@ -78,7 +78,6 @@
 
         <section class="order-mode-section" aria-labelledby="orderModeTitle">
           <div>
-            <p class="eyebrow">Tu pedido, a tu ritmo</p>
             <h2 id="orderModeTitle">¿Cómo quieres recibirlo?</h2>
           </div>
             <div class="mode-switch" id="modeSwitch" role="radiogroup" aria-labelledby="orderModeTitle">
@@ -123,6 +122,7 @@
             </nav>
 
             <div class="menu-results">
+              <p class="menu-view-hint" id="menuViewHint">Explora por categoría o busca directamente un plato.</p>
               <div class="menu-toolbar">
                 <label class="search-field" for="searchInput">
                   <span class="sr-only">Buscar en el menú</span>
@@ -131,8 +131,7 @@
                 </label>
                 <div class="result-count" id="resultCount" role="status" aria-live="polite" aria-atomic="true">Cargando menú...</div>
               </div>
-              <p class="menu-view-hint" id="menuViewHint">Explora por categoría o busca directamente un plato.</p>
-              <nav class="mobile-category-scroller" id="mobileCategoryNav" aria-label="Categorías del menú"></nav>
+              <label class="mobile-category-select" for="mobileCategorySelect"><span>Categorías del menú</span><select id="mobileCategorySelect" aria-controls="productGrid"></select></label>
               <div class="menu-notice" id="menuNotice" role="status" aria-live="polite" hidden></div>
               <div class="product-grid" id="productGrid"></div>
             </div>
@@ -210,7 +209,7 @@
 
       <footer class="footer">
         <div class="brand-lockup brand-lockup--footer">
-          <img class="brand-logo brand-logo--small" src="logo.svg" alt="El Primero" />
+          <img class="brand-logo brand-logo--small" src="logo.svg?v=3" alt="El Primero" />
           <span class="brand-copy"><strong>EL PRIMERO</strong><span>cocina asiática</span></span>
         </div>
         <p>Un sabor que siempre vuelve.</p>
