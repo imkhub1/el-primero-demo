@@ -1,4 +1,5 @@
 const STORAGE_CART = 'el-primero-cart-v1';
+const STORAGE_ORDER_COMMENT = 'el-primero-order-comment-v1';
 const STORAGE_ORDERS = 'el-primero-orders-v1';
 const WHATSAPP_NUMBER = '50625601234';
 const DISCOUNT_PERCENT = 10;
@@ -18,6 +19,17 @@ const EXTRAS = [
   { id: 'verdura', name: 'Verdura extra', price: 1000 },
   { id: 'huevo', name: 'Huevo extra', price: 500 },
 ];
+const EXTRA_IDS_BY_CATEGORY = {
+  'Arroz Frito': ['camarones', 'carne', 'chorizo', 'verdura', 'huevo'],
+  'Arroz En Salsa': ['camarones', 'carne', 'verdura'],
+  'Arroz En Salsa Tomate': ['camarones', 'carne', 'verdura'],
+  'Arroz En Salsa Curry': ['camarones', 'carne', 'verdura'],
+  'Chop Suey En Salsa': ['camarones', 'carne', 'chorizo', 'verdura'],
+  'Chop Suey En Seco': ['camarones', 'carne', 'chorizo', 'verdura'],
+  'Chau Min': ['camarones', 'carne', 'verdura'],
+  Espagueti: ['camarones', 'carne', 'verdura'],
+  Sopa: ['camarones', 'carne', 'verdura', 'huevo'],
+};
 
 const CATEGORY_ORDER = [
   'Todos', 'Bebidas', 'Casados Combinado', 'Casados Chino', 'Arroz Frito',
@@ -60,6 +72,7 @@ const state = {
   activeCategory: 'Todos',
   query: '',
   cart: [],
+  orderComment: '',
   mode: 'delivery',
   payment: 'cash',
   editingProduct: null,
@@ -84,43 +97,82 @@ const escapeHtml = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => 
 const slug = (value) => cleanText(value).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 const reducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
+function extrasForCategory(category, selectedIds = null) {
+  const allowedIds = EXTRA_IDS_BY_CATEGORY[cleanText(category)] || [];
+  const selected = selectedIds === null ? null : new Set(selectedIds);
+  return EXTRAS.filter((extra) => allowedIds.includes(extra.id) && (!selected || selected.has(extra.id)));
+}
+
+function normalizeOrderComment(value) {
+  return String(value ?? '').replace(/[\u200B-\u200D\uFEFF]/g, '').replace(/[\r\n\u2028\u2029]+/g, ' ').slice(0, 180);
+}
+
 function normalizeCartLine(line) {
   const productId = Number(line?.productId);
   const quantityValue = Number(line?.quantity);
   if (!Number.isFinite(productId) || productId <= 0 || !Number.isFinite(quantityValue) || quantityValue <= 0) return null;
   const quantity = Math.min(20, Math.max(1, quantityValue));
-  const extras = Array.isArray(line.extras)
-    ? line.extras.map((extra) => EXTRAS.find((item) => item.id === extra?.id)).filter(Boolean).map((extra) => ({ ...extra }))
-    : [];
-  const productName = cleanText(line.productName) || 'Producto';
-  const unitName = cleanText(line.unitName) || 'unidad';
-  const note = cleanText(line.note).slice(0, 140);
-  const key = line.key || JSON.stringify([productId, line.unitId ?? productId, extras.map((extra) => extra.id).sort(), note]);
+  const category = cleanText(line.category);
+  const unitId = line.unitId ?? productId;
+  const extras = extrasForCategory(category, Array.isArray(line.extras) ? line.extras.map((extra) => extra?.id) : []).map((extra) => ({ ...extra }));
   return {
-    ...line,
-    key,
+    key: JSON.stringify([productId, unitId, extras.map((extra) => extra.id).sort()]),
     productId,
-    productName,
-    category: cleanText(line.category),
-    unitId: line.unitId ?? productId,
-    unitName,
+    productName: cleanText(line.productName) || 'Producto',
+    category,
+    unitId,
+    unitName: cleanText(line.unitName) || 'unidad',
     price: Number(line.price) || 0,
     quantity,
     extras,
-    note,
   };
 }
 
 function readCart() {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_CART) || '[]');
-    return Array.isArray(saved) ? saved.map(normalizeCartLine).filter(Boolean) : [];
+    if (!Array.isArray(saved)) return [];
+    return saved.map(normalizeCartLine).filter(Boolean).reduce((cart, line) => {
+      const existing = cart.find((item) => item.key === line.key);
+      if (existing) existing.quantity = Math.min(20, existing.quantity + line.quantity);
+      else cart.push(line);
+      return cart;
+    }, []);
   } catch {
     return [];
   }
 }
 
+function readOrderComment() {
+  if (!state.cart.length) return '';
+  try {
+    return cleanText(localStorage.getItem(STORAGE_ORDER_COMMENT) || '').slice(0, 180);
+  } catch {
+    return '';
+  }
+}
+
+function saveOrderComment() {
+  try {
+    const comment = cleanText(state.orderComment).slice(0, 180);
+    if (comment) localStorage.setItem(STORAGE_ORDER_COMMENT, comment);
+    else localStorage.removeItem(STORAGE_ORDER_COMMENT);
+  } catch {
+    // The in-memory comment remains usable when browser storage is unavailable.
+  }
+}
+
+function clearOrderComment() {
+  state.orderComment = '';
+  try {
+    localStorage.removeItem(STORAGE_ORDER_COMMENT);
+  } catch {
+    // The in-memory cart remains usable when browser storage is unavailable.
+  }
+}
+
 function saveCart() {
+  if (!state.cart.length) clearOrderComment();
   try {
     localStorage.setItem(STORAGE_CART, JSON.stringify(state.cart));
   } catch {
@@ -157,7 +209,8 @@ function cartQuantityFor(productId) {
 }
 
 function lineUnitTotal(line) {
-  return (Number(line.price) + (line.extras || []).reduce((sum, extra) => sum + Number(extra.price || 0), 0)) * Number(line.quantity || 0);
+  const extras = extrasForCategory(line.category, (line.extras || []).map((extra) => extra?.id));
+  return (Number(line.price) + extras.reduce((sum, extra) => sum + extra.price, 0)) * Number(line.quantity || 0);
 }
 
 function cartSubtotal() {
@@ -280,13 +333,13 @@ function renderMenuView() {
 }
 
 function orderLineMarkup(line, index, context = 'panel') {
-  const extras = line.extras?.length ? ` · ${line.extras.map((extra) => escapeHtml(extra.name)).join(', ')}` : '';
+  const selectedExtras = extrasForCategory(line.category, (line.extras || []).map((extra) => extra?.id));
+  const extras = selectedExtras.length ? ` · ${selectedExtras.map((extra) => escapeHtml(extra.name)).join(', ')}` : '';
   const label = escapeHtml(line.productName);
   return `<div class="order-line ${context === 'modal' ? 'order-line--modal' : ''}">
     <div>
       <h3>${label}</h3>
       <div class="order-line-meta">${escapeHtml(line.unitName)}${extras}</div>
-      ${line.note ? `<div class="order-line-note">“${escapeHtml(line.note)}”</div>` : ''}
       <div class="quantity-control">
         <button data-cart-action="decrease" data-line-index="${index}" data-line-key="${escapeHtml(line.key)}" type="button" aria-label="Disminuir cantidad de ${label}">−</button>
         <span aria-label="Cantidad: ${line.quantity}">${line.quantity}</span>
@@ -296,6 +349,11 @@ function orderLineMarkup(line, index, context = 'panel') {
     </div>
     <span class="order-line-price">${money(lineUnitTotal(line))}</span>
   </div>`;
+}
+
+function orderCommentMarkup(context) {
+  const id = context === 'modal' ? 'orderCommentModal' : 'orderCommentPanel';
+  return `<label class="order-comment order-comment--${context}" for="${id}"><span>Comentario para el pedido (opcional)</span><input id="${id}" data-order-comment type="text" maxlength="180" value="${escapeHtml(state.orderComment)}" placeholder="Ej: sin cubiertos o indicaciones de entrega" /></label>`;
 }
 
 function summaryMarkup(totals) {
@@ -312,6 +370,7 @@ function renderOrderPanel() {
   }
   panel.innerHTML = `<div class="order-panel-head"><div><span class="order-mode-label">${state.mode === 'delivery' ? 'Delivery' : 'Recoger'}</span><h2 id="orderPanelTitle">Tu pedido</h2></div><span class="header-cart-count" aria-label="${count} artículos">${count}</span></div>
     <div class="order-lines">${state.cart.map((line, index) => orderLineMarkup(line, index)).join('')}</div>
+    ${orderCommentMarkup('panel')}
     ${summaryMarkup(totals)}
     <button class="checkout-button" data-open-checkout type="button">Continuar al checkout <span aria-hidden="true">→</span></button>
     <p class="cart-help">Puedes ajustar cantidades antes de confirmar.</p>`;
@@ -392,12 +451,15 @@ function lockBodyScroll() {
 
 function restoreBodyScroll() {
   const styles = state.modal.bodyStyles || {};
+  const rootScrollBehavior = document.documentElement.style.scrollBehavior;
   document.body.classList.remove('is-modal-open');
   document.body.style.position = styles.position || '';
   document.body.style.top = styles.top || '';
   document.body.style.width = styles.width || '';
   setPageInert(false);
+  document.documentElement.style.scrollBehavior = 'auto';
   window.scrollTo({ top: state.modal.scrollY || 0, behavior: 'auto' });
+  document.documentElement.style.scrollBehavior = rootScrollBehavior;
 }
 
 function focusModal(descriptor) {
@@ -429,7 +491,6 @@ function closeModal({ focusTarget } = {}) {
     return;
   }
   const trigger = focusTarget || state.modal.trigger;
-  const scrollY = state.modal.scrollY;
   document.getElementById('modalRoot').innerHTML = '';
   restoreBodyScroll();
   state.modal = { type: null, trigger: null, scrollY: 0, bodyStyles: null, closeOnBackdrop: true, closeOnEscape: true };
@@ -437,7 +498,6 @@ function closeModal({ focusTarget } = {}) {
   state.editingDraft = null;
   const target = trigger instanceof HTMLElement && trigger.isConnected && !trigger.hidden ? trigger : document.getElementById('headerCartButton');
   target?.focus({ preventScroll: true });
-  window.scrollTo({ top: scrollY || 0, behavior: 'auto' });
 }
 
 function focusCartAction(lineKey, action) {
@@ -451,29 +511,29 @@ function openProductModal(productId, trigger = document.activeElement) {
   if (!product) return;
   const units = productUnits(product);
   state.editingProduct = product;
-  state.editingDraft = { unitId: units[0].id, quantity: 1, extras: [], note: '' };
+  state.editingDraft = { unitId: units[0].id, quantity: 1, extras: [] };
   renderProductModal({ kind: 'close' }, trigger);
 }
 
 function currentDraftPrice() {
   const units = productUnits(state.editingProduct);
   const unit = units.find((item) => String(item.id) === String(state.editingDraft.unitId)) || units[0];
-  const extras = EXTRAS.filter((extra) => state.editingDraft.extras.includes(extra.id));
+  const extras = extrasForCategory(state.editingProduct.category_name, state.editingDraft.extras);
   return (unit.Price + extras.reduce((sum, extra) => sum + extra.price, 0)) * state.editingDraft.quantity;
 }
 
 function productModalMarkup() {
   const product = state.editingProduct;
   const units = productUnits(product);
+  const extras = extrasForCategory(product.category_name);
   const selectedUnit = units.find((unit) => String(unit.id) === String(state.editingDraft.unitId)) || units[0];
   return `<div class="modal-backdrop is-bottom" id="productModal"><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="productModalTitle" tabindex="-1">
     <div class="modal-head"><div><p class="modal-kicker">Personaliza tu pedido</p><h2 id="productModalTitle">${escapeHtml(cleanText(product.name))}</h2></div><button class="modal-close" data-close-modal type="button" aria-label="Cerrar">×</button></div>
     <div class="modal-content"><div class="modal-product-intro"><p>${escapeHtml(CATEGORY_META[cleanText(product.category_name)]?.label || cleanText(product.category_name))}</p></div>
       ${units.length > 1 ? `<fieldset class="choice-group"><legend class="choice-label">Elige el tamaño</legend><div class="unit-options" role="radiogroup" aria-label="Tamaño de ${escapeHtml(cleanText(product.name))}">${units.map((unit) => `<button class="unit-option ${String(unit.id) === String(selectedUnit.id) ? 'is-selected' : ''}" data-unit-id="${escapeHtml(unit.id)}" role="radio" aria-checked="${String(unit.id) === String(selectedUnit.id)}" type="button"><strong>${escapeHtml(unit.name)}</strong><span>${money(unit.Price)}</span></button>`).join('')}</div></fieldset>` : `<div class="choice-label">${escapeHtml(selectedUnit.name)} · ${money(selectedUnit.Price)}</div>`}
-      <fieldset class="choice-group"><legend class="choice-label">Extras (opcional)</legend><div class="extras-list">${EXTRAS.map((extra) => `<label class="extra-option"><span><input type="checkbox" data-extra-id="${extra.id}" ${state.editingDraft.extras.includes(extra.id) ? 'checked' : ''} />${escapeHtml(extra.name)}</span><span class="extra-price">+${money(extra.price)}</span></label>`).join('')}</div></fieldset>
-      <label class="field-label" for="itemNote">Nota para cocina (opcional)<textarea id="itemNote" maxlength="140" placeholder="Ej: poca salsa, sin cebolla...">${escapeHtml(state.editingDraft.note)}</textarea></label>
-      <div class="modal-qty-row"><span id="quantityLabel">Cantidad</span><div class="modal-quantity" aria-labelledby="quantityLabel"><button data-product-quantity="decrease" type="button" aria-label="Disminuir cantidad">−</button><strong aria-live="polite">${state.editingDraft.quantity}</strong><button data-product-quantity="increase" type="button" aria-label="Aumentar cantidad">+</button></div></div>
-      <div class="modal-actions"><span class="modal-total"><span>Total</span><strong>${money(currentDraftPrice())}</strong></span><button class="modal-submit" id="addToCartButton" type="button">Agregar al pedido</button></div>
+      ${extras.length ? `<fieldset class="choice-group"><legend class="choice-label">Extras (opcional)</legend><div class="extras-list">${extras.map((extra) => `<label class="extra-option"><span><input type="checkbox" data-extra-id="${extra.id}" ${state.editingDraft.extras.includes(extra.id) ? 'checked' : ''} />${escapeHtml(extra.name)}</span><span class="extra-price">+${money(extra.price)}</span></label>`).join('')}</div></fieldset>` : ''}
+      <div class="modal-qty-row"><span id="quantityLabel">Cantidad</span><div class="modal-quantity" aria-labelledby="quantityLabel"><button data-product-quantity="decrease" type="button" aria-label="Disminuir cantidad">−</button><strong data-product-quantity-value aria-live="polite">${state.editingDraft.quantity}</strong><button data-product-quantity="increase" type="button" aria-label="Aumentar cantidad">+</button></div></div>
+      <div class="modal-actions"><span class="modal-total"><span>Total</span><strong data-product-total aria-live="polite" aria-atomic="true">${money(currentDraftPrice())}</strong></span><button class="modal-submit" id="addToCartButton" type="button">Agregar al pedido</button></div>
     </div></section></div>`;
 }
 
@@ -481,16 +541,33 @@ function renderProductModal(focus = { kind: 'close' }, trigger) {
   renderModal('product', productModalMarkup(), { trigger, focus, closeOnBackdrop: true, closeOnEscape: true });
 }
 
+function updateProductModal() {
+  const modal = document.getElementById('productModal');
+  if (!modal || !state.editingProduct || !state.editingDraft) return;
+  modal.querySelectorAll('[data-unit-id]').forEach((button) => {
+    const selected = String(button.dataset.unitId) === String(state.editingDraft.unitId);
+    button.classList.toggle('is-selected', selected);
+    button.setAttribute('aria-checked', String(selected));
+  });
+  const allowedExtraIds = new Set(extrasForCategory(state.editingProduct.category_name).map((extra) => extra.id));
+  modal.querySelectorAll('[data-extra-id]').forEach((input) => {
+    input.checked = allowedExtraIds.has(input.dataset.extraId) && state.editingDraft.extras.includes(input.dataset.extraId);
+  });
+  const quantity = modal.querySelector('[data-product-quantity-value]');
+  const total = modal.querySelector('[data-product-total]');
+  if (quantity) quantity.textContent = state.editingDraft.quantity;
+  if (total) total.textContent = money(currentDraftPrice());
+}
+
 function addDraftToCart() {
   const product = state.editingProduct;
   const units = productUnits(product);
   const unit = units.find((item) => String(item.id) === String(state.editingDraft.unitId)) || units[0];
-  const extras = EXTRAS.filter((extra) => state.editingDraft.extras.includes(extra.id));
-  const note = cleanText(document.getElementById('itemNote')?.value || state.editingDraft.note).slice(0, 140);
-  const key = JSON.stringify([product.id, unit.id, extras.map((extra) => extra.id).sort(), note]);
+  const extras = extrasForCategory(product.category_name, state.editingDraft.extras);
+  const key = JSON.stringify([product.id, unit.id, extras.map((extra) => extra.id).sort()]);
   const existing = state.cart.find((line) => line.key === key);
   if (existing) existing.quantity = Math.min(20, existing.quantity + state.editingDraft.quantity);
-  else state.cart.push({ key, productId: product.id, productName: cleanText(product.name), category: cleanText(product.category_name), unitId: unit.id, unitName: cleanText(unit.name), price: unit.Price, quantity: state.editingDraft.quantity, extras, note });
+  else state.cart.push({ key, productId: product.id, productName: cleanText(product.name), category: cleanText(product.category_name), unitId: unit.id, unitName: cleanText(unit.name), price: unit.Price, quantity: state.editingDraft.quantity, extras });
   saveCart();
   closeModal();
   renderAll();
@@ -510,7 +587,7 @@ function changeLine(index, action) {
 }
 
 function cartModalMarkup() {
-  return `<div class="modal-backdrop is-bottom" id="cartModal"><section class="modal-card modal-card--narrow" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle" tabindex="-1"><div class="modal-head"><div><p class="modal-kicker">Antes de confirmar</p><h2 id="cartModalTitle">Tu pedido</h2></div><button class="modal-close" data-close-modal type="button" aria-label="Cerrar">×</button></div><div class="modal-content"><div class="order-lines order-lines--modal">${state.cart.map((line, index) => orderLineMarkup(line, index, 'modal')).join('')}</div>${summaryMarkup(orderTotals())}<button class="modal-submit" data-open-checkout type="button">Continuar al checkout <span aria-hidden="true">→</span></button></div></section></div>`;
+  return `<div class="modal-backdrop is-bottom" id="cartModal"><section class="modal-card modal-card--narrow" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle" tabindex="-1"><div class="modal-head"><div><p class="modal-kicker">Antes de confirmar</p><h2 id="cartModalTitle">Tu pedido</h2></div><button class="modal-close" data-close-modal type="button" aria-label="Cerrar">×</button></div><div class="modal-content"><div class="order-lines order-lines--modal">${state.cart.map((line, index) => orderLineMarkup(line, index, 'modal')).join('')}</div>${orderCommentMarkup('modal')}${summaryMarkup(orderTotals())}<button class="modal-submit" data-open-checkout type="button">Continuar al checkout <span aria-hidden="true">→</span></button></div></section></div>`;
 }
 
 function openCartModal(trigger = document.activeElement) {
@@ -525,7 +602,7 @@ function checkoutMarkup() {
   const totals = orderTotals();
   const delivery = state.mode === 'delivery';
   const cashSelected = state.payment === 'cash';
-  return `<div class="modal-backdrop is-bottom" id="checkoutModal"><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="checkoutModalTitle" tabindex="-1"><div class="modal-head"><div><p class="modal-kicker">Último paso</p><h2 id="checkoutModalTitle">Confirmar pedido</h2></div><button class="modal-close" data-close-modal type="button" aria-label="Cerrar checkout">×</button></div><div class="modal-content"><div class="checkout-layout"><form class="checkout-form" id="checkoutForm" novalidate><div class="checkout-mode-note">${delivery ? 'Delivery seleccionado · envío gratis' : 'Recoger seleccionado · te esperamos en el restaurante'}</div><label class="field-label" for="checkoutName">Nombre *<input id="checkoutName" name="name" required minlength="2" placeholder="Tu nombre" autocomplete="name" /></label><label class="field-label" for="checkoutPhone">Teléfono *<input id="checkoutPhone" name="phone" required type="tel" placeholder="8888-8888" autocomplete="tel" inputmode="tel" /></label>${delivery ? '<label class="field-label" for="checkoutAddress">Dirección de entrega *<textarea id="checkoutAddress" name="address" required placeholder="Provincia, cantón, señas exactas..." autocomplete="street-address"></textarea></label>' : ''}<label class="field-label" for="orderNote">Nota del pedido (opcional)<textarea id="orderNote" name="orderNote" maxlength="180" placeholder="Ej: factura, indicaciones para entregar..."></textarea></label><fieldset class="payment-fieldset"><legend class="choice-label">Forma de pago</legend><div class="payment-options"><label class="payment-option"><input type="radio" name="payment" value="cash" ${cashSelected ? 'checked' : ''} /><span><strong>Efectivo</strong><small>Si necesitas cambio, indícalo abajo.</small></span></label><label class="payment-option"><input type="radio" name="payment" value="card" ${state.payment === 'card' ? 'checked' : ''} /><span><strong>Tarjeta</strong><small>Pago contra entrega.</small></span></label><label class="payment-option"><input type="radio" name="payment" value="sinpe" ${state.payment === 'sinpe' ? 'checked' : ''} /><span><strong>SINPE Móvil</strong><small>El restaurante te indica los datos al confirmar.</small></span></label></div></fieldset><div class="cash-field" id="cashField" ${cashSelected ? '' : 'hidden'} aria-hidden="${!cashSelected}"><label class="field-label" for="cashAmount">¿Con cuánto pagarás? (opcional)<input id="cashAmount" name="cashAmount" type="number" min="${totals.total}" step="1" inputmode="decimal" aria-describedby="cashAmountHint" placeholder="Ej: 10000" ${cashSelected ? '' : 'disabled'} /></label><p id="cashAmountHint" class="field-hint">Te ayudaremos a calcular el cambio.</p></div><button class="modal-submit checkout-submit" id="submitOrderButton" type="submit">Preparar pedido <span aria-hidden="true">→</span></button><p class="checkout-disclaimer">Al continuar guardaremos tu pedido en este dispositivo y podrás enviarlo al restaurante por WhatsApp.</p></form><aside class="checkout-side" aria-label="Resumen del pedido"><h3>Resumen</h3>${state.cart.map((line) => `<div class="checkout-line"><span>${line.quantity}× ${escapeHtml(line.productName)}</span><strong>${money(lineUnitTotal(line))}</strong></div>`).join('')}${summaryMarkup(totals)}</aside></div></div></section></div>`;
+  return `<div class="modal-backdrop is-bottom" id="checkoutModal"><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="checkoutModalTitle" tabindex="-1"><div class="modal-head"><div><p class="modal-kicker">Último paso</p><h2 id="checkoutModalTitle">Confirmar pedido</h2></div><button class="modal-close" data-close-modal type="button" aria-label="Cerrar checkout">×</button></div><div class="modal-content"><div class="checkout-layout"><form class="checkout-form" id="checkoutForm" novalidate><div class="checkout-mode-note">${delivery ? 'Delivery seleccionado · envío gratis' : 'Recoger seleccionado · te esperamos en el restaurante'}</div><label class="field-label" for="checkoutName">Nombre *<input id="checkoutName" name="name" required minlength="2" placeholder="Tu nombre" autocomplete="name" /></label><label class="field-label" for="checkoutPhone">Teléfono *<input id="checkoutPhone" name="phone" required type="tel" placeholder="8888-8888" autocomplete="tel" inputmode="tel" /></label>${delivery ? '<label class="field-label" for="checkoutAddress">Dirección de entrega *<textarea id="checkoutAddress" name="address" required placeholder="Provincia, cantón, señas exactas..." autocomplete="street-address"></textarea></label>' : ''}<fieldset class="payment-fieldset"><legend class="choice-label">Forma de pago</legend><div class="payment-options"><label class="payment-option"><input type="radio" name="payment" value="cash" ${cashSelected ? 'checked' : ''} /><span><strong>Efectivo</strong><small>Si necesitas cambio, indícalo abajo.</small></span></label><label class="payment-option"><input type="radio" name="payment" value="card" ${state.payment === 'card' ? 'checked' : ''} /><span><strong>Tarjeta</strong><small>Pago contra entrega.</small></span></label><label class="payment-option"><input type="radio" name="payment" value="sinpe" ${state.payment === 'sinpe' ? 'checked' : ''} /><span><strong>SINPE Móvil</strong><small>El restaurante te indica los datos al confirmar.</small></span></label></div></fieldset><div class="cash-field" id="cashField" ${cashSelected ? '' : 'hidden'} aria-hidden="${!cashSelected}"><label class="field-label" for="cashAmount">¿Con cuánto pagarás? (opcional)<input id="cashAmount" name="cashAmount" type="number" min="${totals.total}" step="1" inputmode="decimal" aria-describedby="cashAmountHint" placeholder="Ej: 10000" ${cashSelected ? '' : 'disabled'} /></label><p id="cashAmountHint" class="field-hint">Te ayudaremos a calcular el cambio.</p></div><button class="modal-submit checkout-submit" id="submitOrderButton" type="submit">Preparar pedido <span aria-hidden="true">→</span></button><p class="checkout-disclaimer">Al continuar guardaremos tu pedido en este dispositivo y podrás enviarlo al restaurante por WhatsApp.</p></form><aside class="checkout-side" aria-label="Resumen del pedido"><h3>Resumen</h3>${state.cart.map((line) => `<div class="checkout-line"><span>${line.quantity}× ${escapeHtml(line.productName)}</span><strong>${money(lineUnitTotal(line))}</strong></div>`).join('')}${summaryMarkup(totals)}</aside></div></div></section></div>`;
 }
 
 function openCheckout(trigger = document.activeElement) {
@@ -578,8 +655,8 @@ function registerOrder(form) {
     cashAmount,
     changeDue: cashAmount ? cashAmount - totals.total : null,
     customer: { name: cleanText(formData.get('name')), phone: cleanText(formData.get('phone')), address: cleanText(formData.get('address')) },
-    orderNote: cleanText(formData.get('orderNote')),
-    items: state.cart.map((line) => ({ ...line, extras: line.extras?.map((extra) => ({ ...extra })) || [] })),
+    orderNote: cleanText(state.orderComment).slice(0, 180),
+    items: state.cart.map(normalizeCartLine).filter(Boolean),
     totals,
   };
   try {
@@ -596,15 +673,15 @@ function registerOrder(form) {
 
 function buildWhatsAppMessage(order) {
   const items = order.items.map((line) => {
-    const extras = line.extras?.length ? `\n   Extras: ${line.extras.map((extra) => extra.name).join(', ')}` : '';
-    const note = line.note ? `\n   Nota: ${line.note}` : '';
-    return `${line.quantity} x ${line.productName}\n   Tamaño: ${line.unitName}${extras}${note}\n   Importe: ${money(lineUnitTotal(line))}`;
+    const selectedExtras = extrasForCategory(line.category, (line.extras || []).map((extra) => extra?.id));
+    const extras = selectedExtras.length ? `\n   Extras: ${selectedExtras.map((extra) => extra.name).join(', ')}` : '';
+    return `${line.quantity} x ${line.productName}\n   Tamaño: ${line.unitName}${extras}\n   Importe: ${money(lineUnitTotal(line))}`;
   }).join('\n\n');
   const totals = order.totals;
   const delivery = totals.deliveryFee ? money(totals.deliveryFee) : 'Gratis';
   const cash = order.cashAmount ? `\nPaga con: ${money(order.cashAmount)}\nCambio: ${money(order.changeDue)}` : '';
-  const note = order.orderNote ? `\nNota del pedido: ${order.orderNote}` : '';
-  return `Hola, quiero confirmar el pedido ${order.id} en El Primero.\n\nModalidad: ${order.mode === 'delivery' ? 'Delivery' : 'Recoger'}\nNombre: ${order.customer.name}\nTeléfono: ${order.customer.phone}${order.customer.address ? `\nDirección: ${order.customer.address}` : ''}\n\n${items}\n\nSubtotal: ${money(totals.subtotal)}\nDescuento: −${money(totals.discount)}\nEnvío: ${delivery}\nTotal: ${money(totals.total)}\n\nForma de pago: ${order.paymentLabel}${cash}${note}`;
+  const comment = order.orderNote ? `\nComentario del pedido: ${order.orderNote}` : '';
+  return `Hola, quiero confirmar el pedido ${order.id} en El Primero.\n\nModalidad: ${order.mode === 'delivery' ? 'Delivery' : 'Recoger'}\nNombre: ${order.customer.name}\nTeléfono: ${order.customer.phone}${order.customer.address ? `\nDirección: ${order.customer.address}` : ''}\n\n${items}\n\nSubtotal: ${money(totals.subtotal)}\nDescuento: −${money(totals.discount)}\nEnvío: ${delivery}\nTotal: ${money(totals.total)}\n\nForma de pago: ${order.paymentLabel}${cash}${comment}`;
 }
 
 function whatsappUrl(order) {
@@ -681,13 +758,13 @@ function handleModalClick(event) {
   const unit = event.target.closest('[data-unit-id]');
   if (unit && state.editingDraft) {
     state.editingDraft.unitId = unit.dataset.unitId;
-    renderProductModal({ kind: 'unit', value: unit.dataset.unitId });
+    updateProductModal();
     return;
   }
   const quantity = event.target.closest('[data-product-quantity]');
   if (quantity && state.editingDraft) {
     state.editingDraft.quantity = Math.max(1, Math.min(20, state.editingDraft.quantity + (quantity.dataset.productQuantity === 'increase' ? 1 : -1)));
-    renderProductModal({ kind: 'product-quantity', value: quantity.dataset.productQuantity });
+    updateProductModal();
     return;
   }
   if (event.target.closest('#addToCartButton')) {
@@ -701,9 +778,9 @@ function handleModalClick(event) {
 function handleModalChange(event) {
   if (event.target.matches('[data-extra-id]') && state.editingDraft) {
     const extraId = event.target.dataset.extraId;
-    const focus = { kind: 'extra', value: extraId };
-    state.editingDraft.extras = event.target.checked ? [...new Set([...state.editingDraft.extras, extraId])] : state.editingDraft.extras.filter((id) => id !== extraId);
-    renderProductModal(focus);
+    const selectedIds = event.target.checked ? [...new Set([...state.editingDraft.extras, extraId])] : state.editingDraft.extras.filter((id) => id !== extraId);
+    state.editingDraft.extras = extrasForCategory(state.editingProduct.category_name, selectedIds).map((extra) => extra.id);
+    updateProductModal();
     return;
   }
   if (event.target.name === 'payment') {
@@ -722,8 +799,17 @@ function handleModalChange(event) {
   }
 }
 
+function handleOrderCommentInput(event) {
+  if (!event.target.matches('[data-order-comment]')) return;
+  state.orderComment = normalizeOrderComment(event.target.value);
+  document.querySelectorAll('[data-order-comment]').forEach((input) => {
+    if (input !== event.target && input.value !== state.orderComment) input.value = state.orderComment;
+  });
+  saveOrderComment();
+}
+
 function handleModalInput(event) {
-  if (event.target.id === 'itemNote' && state.editingDraft) state.editingDraft.note = event.target.value;
+  handleOrderCommentInput(event);
 }
 
 function handleModalSubmit(event) {
@@ -748,6 +834,9 @@ function handleModeKeydown(event) {
 
 function bindEvents() {
   state.cart = readCart();
+  if (state.cart.length) state.orderComment = readOrderComment();
+  else clearOrderComment();
+  saveCart();
   document.getElementById('searchInput').addEventListener('input', (event) => {
     state.query = event.target.value;
     renderMenuView();
@@ -785,6 +874,7 @@ function bindEvents() {
     const checkout = event.target.closest('[data-open-checkout]');
     if (checkout) openCheckout(checkout);
   });
+  document.getElementById('orderPanel').addEventListener('input', handleOrderCommentInput);
   document.getElementById('headerCartButton').addEventListener('click', (event) => openCartModal(event.currentTarget));
   document.getElementById('heroCartButton').addEventListener('click', (event) => openCartModal(event.currentTarget));
   document.getElementById('mobileCartButton').addEventListener('click', (event) => openCartModal(event.currentTarget));
