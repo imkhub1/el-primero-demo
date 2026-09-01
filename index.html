@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1d2523" />
+    <meta
+      name="description"
+      content="Pide comida asiática de El Primero para recoger o recibir en casa."
+    />
+    <title>El Primero | Cocina asiática</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#menu">Saltar al menú</a>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand-lockup" href="#inicio" aria-label="El Primero, inicio">
+          <img class="brand-logo brand-logo--small" src="logo.svg" alt="El Primero" />
+          <span class="brand-copy">
+            <strong>EL PRIMERO</strong>
+            <span>cocina asiática</span>
+          </span>
+        </a>
+        <nav class="topnav" id="primaryNav" aria-label="Navegación principal">
+          <a href="#menu">Menú</a>
+          <a href="#como-funciona">Cómo pedir</a>
+          <a href="#informacion">Información</a>
+        </nav>
+        <div class="header-actions">
+          <button class="mobile-nav-toggle" id="mobileNavToggle" type="button" aria-controls="primaryNav" aria-expanded="false" aria-label="Abrir menú">
+            <span class="mobile-nav-toggle-icon" aria-hidden="true"><i></i><i></i></span>
+          </button>
+          <button class="header-cart" id="headerCartButton" type="button" aria-haspopup="dialog" aria-controls="modalRoot" aria-label="Mi pedido, 0 artículos">
+            <span class="cart-icon" aria-hidden="true">⌑</span>
+            <span>Mi pedido</span>
+            <span class="header-cart-count" id="headerCartCount" aria-hidden="true">0</span>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="inicio">
+          <div class="hero-copy">
+            <p class="eyebrow eyebrow--light"><span></span> Hecho al momento</p>
+            <h1>Lo bueno <em class="headline-line">se comparte.</em></h1>
+            <p class="hero-lede">
+              Arroz frito, chop suey y favoritos de la casa. Elige tus platos,
+              arma tu pedido y nosotros hacemos el resto.
+            </p>
+            <div class="hero-actions">
+              <a class="button button--gold" href="#menu">Explorar menú <span>↘</span></a>
+              <button class="text-button text-button--light" id="heroCartButton" type="button">
+                Ver mi pedido <span>→</span>
+              </button>
+            </div>
+            <div class="hero-facts" aria-label="Beneficios de pedir en El Primero">
+              <div><strong>10%</strong><span>de descuento</span></div>
+              <div><strong>₡0</strong><span>envío</span></div>
+              <div><strong>3</strong><span>formas de pago</span></div>
+            </div>
+            <p class="promotion-note">
+              Promoción válida de agosto a octubre de 2026: 10% de descuento y
+              delivery gratis dentro de un radio de 5 km.
+            </p>
+          </div>
+          <div class="hero-art">
+            <div class="hero-orbit hero-orbit--one" aria-hidden="true"></div>
+            <div class="hero-orbit hero-orbit--two" aria-hidden="true"></div>
+            <div class="hero-dots hero-dots--left" aria-hidden="true">••<br />•••</div>
+            <img class="brand-logo brand-logo--hero" src="logo.svg" alt="Logo de El Primero" />
+            <span class="hero-stamp" aria-hidden="true">ASIAN<br /><b>COMFORT</b></span>
+            <span class="hero-dots hero-dots--right" aria-hidden="true">•<br />••</span>
+          </div>
+        </section>
+
+        <section class="order-mode-section" aria-labelledby="orderModeTitle">
+          <div>
+            <p class="eyebrow">Tu pedido, a tu ritmo</p>
+            <h2 id="orderModeTitle">¿Cómo quieres recibirlo?</h2>
+          </div>
+            <div class="mode-switch" id="modeSwitch" role="radiogroup" aria-labelledby="orderModeTitle">
+            <button class="mode-option is-active" data-mode="delivery" role="radio" aria-checked="true" type="button">
+              <span class="mode-symbol" aria-hidden="true">↗</span>
+              <span><strong>Delivery</strong><small>Envío gratis</small></span>
+            </button>
+            <button class="mode-option" data-mode="pickup" role="radio" aria-checked="false" type="button">
+              <span class="mode-symbol" aria-hidden="true">⌂</span>
+              <span><strong>Recoger</strong><small>En el restaurante</small></span>
+            </button>
+          </div>
+        </section>
+
+        <section class="menu-section" id="menu" aria-labelledby="menuTitle">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">El menú</p>
+              <h2 id="menuTitle">Tu próximo antojo <em class="headline-line">empieza aquí.</em></h2>
+            </div>
+            <p class="section-intro">
+              Los clásicos que ya conoces, más ese plato que todavía no has probado.
+              Selecciona cualquier opción para elegir tamaño, extras y cantidad.
+            </p>
+          </div>
+
+          <section class="featured-area" aria-labelledby="featuredTitle">
+            <div class="featured-heading">
+              <div>
+                <p class="eyebrow">Recomendados</p>
+                <h3 id="featuredTitle">Favoritos de la casa</h3>
+              </div>
+              <p>Imágenes ilustrativas</p>
+            </div>
+            <div class="featured-grid" id="featuredGrid"></div>
+          </section>
+
+          <div class="menu-layout">
+            <nav class="category-rail" aria-label="Categorías del menú">
+              <div class="rail-kicker">Explorar por</div>
+              <div id="categoryNav" class="category-nav"></div>
+            </nav>
+
+            <div class="menu-results">
+              <div class="menu-toolbar">
+                <label class="search-field" for="searchInput">
+                  <span class="sr-only">Buscar en el menú</span>
+                  <span aria-hidden="true">⌕</span>
+                  <input id="searchInput" type="search" placeholder="Busca por nombre o ingrediente" autocomplete="off" aria-controls="productGrid" aria-describedby="resultCount" />
+                </label>
+                <div class="result-count" id="resultCount" role="status" aria-live="polite" aria-atomic="true">Cargando menú...</div>
+              </div>
+              <p class="menu-view-hint" id="menuViewHint">Explora por categoría o busca directamente un plato.</p>
+              <nav class="mobile-category-scroller" id="mobileCategoryNav" aria-label="Categorías del menú"></nav>
+              <div class="menu-notice" id="menuNotice" role="status" aria-live="polite" hidden></div>
+              <div class="product-grid" id="productGrid"></div>
+            </div>
+
+            <aside class="order-panel" id="orderPanel" aria-labelledby="orderPanelTitle"></aside>
+          </div>
+        </section>
+
+        <section class="how-section" id="como-funciona" aria-labelledby="howTitle">
+          <div class="how-intro">
+            <p class="eyebrow">Así de fácil</p>
+            <h2 id="howTitle">Un pedido sin <em class="headline-line">complicaciones.</em></h2>
+            <p>Menos pasos entre tu antojo y la mesa.</p>
+          </div>
+          <div class="steps-grid">
+            <article class="step-card">
+              <span class="step-number">01</span>
+              <span class="step-icon" aria-hidden="true">✦</span>
+              <h3>Arma tu plato</h3>
+              <p>Elige tamaño, agrega extras y deja una nota si lo necesitas.</p>
+            </article>
+            <article class="step-card step-card--accent">
+              <span class="step-number">02</span>
+              <span class="step-icon" aria-hidden="true">⌑</span>
+              <h3>Revisa tu pedido</h3>
+              <p>Controla cantidades y mira el total antes de confirmar.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">03</span>
+              <span class="step-icon" aria-hidden="true">↗</span>
+              <h3>Recibe y disfruta</h3>
+              <p>Pago en efectivo, tarjeta contra entrega o SINPE Móvil.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="information-section" id="informacion" aria-labelledby="informationTitle">
+          <div class="information-heading">
+            <p class="eyebrow">Información del restaurante</p>
+            <h2 id="informationTitle">Aquí te esperamos.</h2>
+            <p>Todo lo que necesitas para visitarnos o pedir desde casa.</p>
+          </div>
+          <div class="information-grid">
+            <article class="information-card">
+              <span class="information-icon" aria-hidden="true">◷</span>
+              <h3>Horario</h3>
+              <p>Martes a domingo<br />11:00 a.m. – 9:45 p.m.</p>
+            </article>
+            <article class="information-card">
+              <span class="information-icon" aria-hidden="true">⌖</span>
+              <h3>Ubicación</h3>
+              <p>150 m este de AMPM, frente a la fábrica Smurfit Westrock, junto a Ferretería Jizar, Lagunilla de Heredia.</p>
+            </article>
+            <article class="information-card">
+              <span class="information-icon" aria-hidden="true">↗</span>
+              <h3>Cobertura</h3>
+              <p>Delivery gratis dentro de un radio de 5 km.</p>
+            </article>
+            <article class="information-card">
+              <span class="information-icon" aria-hidden="true">+</span>
+              <h3>Contacto</h3>
+              <p><a href="tel:+50625601234">Teléfono: 2560-1234</a><br /><a href="https://wa.me/50625601234" target="_blank" rel="noreferrer noopener">WhatsApp: 2560-1234</a></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="contact-strip" id="contacto" aria-label="Contacto">
+          <div>
+            <span class="contact-mark" aria-hidden="true">+</span>
+            <div><strong>¿Tienes una pregunta?</strong><span>Escríbenos y te ayudamos con tu pedido.</span></div>
+          </div>
+           <a href="https://wa.me/50625601234" target="_blank" rel="noreferrer noopener">WhatsApp <span>↗</span></a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="brand-lockup brand-lockup--footer">
+          <img class="brand-logo brand-logo--small" src="logo.svg" alt="El Primero" />
+          <span class="brand-copy"><strong>EL PRIMERO</strong><span>cocina asiática</span></span>
+        </div>
+        <p>Un sabor que siempre vuelve.</p>
+        <span>© 2026 El Primero</span>
+      </footer>
+    </div>
+
+    <button class="mobile-cart-bar" id="mobileCartButton" type="button" aria-haspopup="dialog" aria-controls="modalRoot" aria-label="Ver mi pedido, 0 artículos" hidden>
+      <span><span class="mobile-cart-bubble" id="mobileCartCount">0</span> Ver mi pedido</span>
+      <strong id="mobileCartTotal">₡0</strong>
+    </button>
+
+    <div id="modalRoot"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

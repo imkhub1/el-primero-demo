@@ -1,0 +1,4085 @@
+[
+  {
+    "Code": "00001",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q1",
+    "Tastes": "",
+    "category_id": 2,
+    "category_name": "Arroz Frito",
+    "id": 1,
+    "name": "#1 Arroz el primero",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 1,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 184,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00002",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q2",
+    "Tastes": "",
+    "category_id": 2,
+    "category_name": "Arroz Frito",
+    "id": 2,
+    "name": "#2 Arroz con pollo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 2,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 185,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00003",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q3",
+    "Tastes": "",
+    "category_id": 2,
+    "category_name": "Arroz Frito",
+    "id": 3,
+    "name": "#3 Arroz con lech\u00f3n",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 3,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 186,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00004",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4100,
+    "ShortCode": "q4",
+    "Tastes": "",
+    "category_id": 2,
+    "category_name": "Arroz Frito",
+    "id": 4,
+    "name": "#4 Arroz con carne de res",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4100,
+        "id": 4,
+        "name": "\u200bmedi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5100,
+        "id": 188,
+        "name": "\u200be\u200bntero"
+      }
+    ]
+  },
+  {
+    "Code": "00005",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4100,
+    "ShortCode": "q5",
+    "Tastes": "",
+    "category_id": 2,
+    "category_name": "Arroz Frito",
+    "id": 5,
+    "name": "#5 Arroz con pollo y camar\u00f3n",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4100,
+        "id": 5,
+        "name": "\u200bmedi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5100,
+        "id": 189,
+        "name": "\u200be\u200bntero"
+      }
+    ]
+  },
+  {
+    "Code": "00006",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4300,
+    "ShortCode": "q6",
+    "Tastes": "",
+    "category_id": 2,
+    "category_name": "Arroz Frito",
+    "id": 6,
+    "name": "#6 Arroz con camar\u00f3nnes",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4300,
+        "id": 6,
+        "name": "\u200bmedio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5800,
+        "id": 190,
+        "name": "\u200bente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00007",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q7",
+    "Tastes": "",
+    "category_id": 2,
+    "category_name": "Arroz Frito",
+    "id": 7,
+    "name": "#7 Arroz con pollo y lech\u00f3n",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 7,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 191,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00008",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4300,
+    "ShortCode": "q8",
+    "Tastes": "",
+    "category_id": 2,
+    "category_name": "Arroz Frito",
+    "id": 8,
+    "name": "#8 Arroz con calamar",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4300,
+        "id": 8,
+        "name": "\u200bmedio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5800,
+        "id": 192,
+        "name": "\u200bente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00009",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4100,
+    "ShortCode": "q9",
+    "Tastes": "",
+    "category_id": 2,
+    "category_name": "Arroz Frito",
+    "id": 9,
+    "name": "#9 Arroz con chorizo chino",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4100,
+        "id": 9,
+        "name": "\u200bmedi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5100,
+        "id": 193,
+        "name": "\u200be\u200bntero"
+      }
+    ]
+  },
+  {
+    "Code": "00010",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q10",
+    "Tastes": "",
+    "category_id": 2,
+    "category_name": "Arroz Frito",
+    "id": 10,
+    "name": "#10 Arroz con pollo y jam\u00f3n",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 10,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 194,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00011",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4300,
+    "ShortCode": "q11",
+    "Tastes": "",
+    "category_id": 2,
+    "category_name": "Arroz Frito",
+    "id": 11,
+    "name": "#11 Arroz con mariscos",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4300,
+        "id": 11,
+        "name": "\u200bmedio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5800,
+        "id": 195,
+        "name": "\u200bente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00012",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q12",
+    "Tastes": "",
+    "category_id": 2,
+    "category_name": "Arroz Frito",
+    "id": 12,
+    "name": "#12 Arroz frito vegetariano",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 12,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 196,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00013",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q13",
+    "Tastes": "",
+    "category_id": 3,
+    "category_name": "Arroz En Salsa",
+    "id": 13,
+    "name": "#13 Arroz en salsa de la casa",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 13,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 211,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00014",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q14",
+    "Tastes": "",
+    "category_id": 3,
+    "category_name": "Arroz En Salsa",
+    "id": 14,
+    "name": "#14 Arroz con pollo y verduras",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 14,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 212,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00015",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4100,
+    "ShortCode": "q15",
+    "Tastes": "",
+    "category_id": 3,
+    "category_name": "Arroz En Salsa",
+    "id": 15,
+    "name": "#15 Arroz con carne de res y verduras",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4100,
+        "id": 15,
+        "name": "\u200bmedi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5100,
+        "id": 213,
+        "name": "\u200be\u200bntero"
+      }
+    ]
+  },
+  {
+    "Code": "00016",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4100,
+    "ShortCode": "q16",
+    "Tastes": "",
+    "category_id": 3,
+    "category_name": "Arroz En Salsa",
+    "id": 16,
+    "name": "#16 Arroz con pollo,camarones y verduras",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4100,
+        "id": 16,
+        "name": "\u200bmedi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5100,
+        "id": 214,
+        "name": "\u200be\u200bntero"
+      }
+    ]
+  },
+  {
+    "Code": "00017",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q17",
+    "Tastes": "",
+    "category_id": 3,
+    "category_name": "Arroz En Salsa",
+    "id": 17,
+    "name": "#17 Arroz con lech\u00f3n y verduras",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 17,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 215,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00018",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3500,
+    "ShortCode": "q18",
+    "Tastes": "",
+    "category_id": 3,
+    "category_name": "Arroz En Salsa",
+    "id": 18,
+    "name": "#18 Arroz con lech\u00f3n especial",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3500,
+        "id": 18,
+        "name": "medio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4500,
+        "id": 216,
+        "name": "ent\u200bero"
+      }
+    ]
+  },
+  {
+    "Code": "00019",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4600,
+    "ShortCode": "q19",
+    "Tastes": "",
+    "category_id": 29,
+    "category_name": "Arroz En Salsa Tomate",
+    "id": 19,
+    "name": "#19 Aroz con pollo en salsa de tomate al horno",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4600,
+        "id": 19,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00020",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5300,
+    "ShortCode": "q20",
+    "Tastes": "",
+    "category_id": 29,
+    "category_name": "Arroz En Salsa Tomate",
+    "id": 20,
+    "name": "#20 Arroz con lomo en salsa de tomate al horno",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5300,
+        "id": 20,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00021",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "21C",
+    "Tastes": "",
+    "category_id": 29,
+    "category_name": "Arroz En Salsa Tomate",
+    "id": 21,
+    "name": "#21c Arroz con camar\u00f3n en salsa de tomate",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 21,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00022",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3500,
+    "ShortCode": "q22",
+    "Tastes": "",
+    "category_id": 30,
+    "category_name": "Arroz En Salsa Curry",
+    "id": 22,
+    "name": "#22 Arroz con pollo y verdura",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3500,
+        "id": 22,
+        "name": "medio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4500,
+        "id": 217,
+        "name": "ent\u200bero"
+      }
+    ]
+  },
+  {
+    "Code": "00023",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4500,
+    "ShortCode": "q23",
+    "Tastes": "",
+    "category_id": 30,
+    "category_name": "Arroz En Salsa Curry",
+    "id": 23,
+    "name": "#23 Arroz con camar\u00f3n especial",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4500,
+        "id": 23,
+        "name": "medi\u200bo\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5900,
+        "id": 218,
+        "name": "\u200benter\u200bo"
+      }
+    ]
+  },
+  {
+    "Code": "00024",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3500,
+    "ShortCode": "q24",
+    "Tastes": "",
+    "category_id": 30,
+    "category_name": "Arroz En Salsa Curry",
+    "id": 24,
+    "name": "#24 Arroz con pollo especial",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3500,
+        "id": 24,
+        "name": "medio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4500,
+        "id": 219,
+        "name": "ent\u200bero"
+      }
+    ]
+  },
+  {
+    "Code": "00025",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4300,
+    "ShortCode": "q25",
+    "Tastes": "",
+    "category_id": 30,
+    "category_name": "Arroz En Salsa Curry",
+    "id": 25,
+    "name": "#25 Arroz con lomo especial",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4300,
+        "id": 25,
+        "name": "\u200bmedio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5300,
+        "id": 220,
+        "name": "\u200ben\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00026",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q26",
+    "Tastes": "",
+    "category_id": 31,
+    "category_name": "Chop Suey En Salsa",
+    "id": 26,
+    "name": "#26 Chop suey de la casa",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 26,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 272,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00027",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q27",
+    "Tastes": "",
+    "category_id": 31,
+    "category_name": "Chop Suey En Salsa",
+    "id": 27,
+    "name": "#27 Chop suey con pollo y verduras",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 27,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 273,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00028",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4100,
+    "ShortCode": "q28",
+    "Tastes": "",
+    "category_id": 31,
+    "category_name": "Chop Suey En Salsa",
+    "id": 28,
+    "name": "#28 Chop suey con carne de res y verduras",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4100,
+        "id": 28,
+        "name": "\u200bmedi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5100,
+        "id": 271,
+        "name": "\u200be\u200bntero"
+      }
+    ]
+  },
+  {
+    "Code": "00029",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q29",
+    "Tastes": "",
+    "category_id": 31,
+    "category_name": "Chop Suey En Salsa",
+    "id": 29,
+    "name": "#29 Chop suey con lech\u00f3n y verduras",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 29,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 221,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00030",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4100,
+    "ShortCode": "q30",
+    "Tastes": "",
+    "category_id": 31,
+    "category_name": "Chop Suey En Salsa",
+    "id": 30,
+    "name": "#30 Chop suey con pollo, camar\u00f3nnes y verduras",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4100,
+        "id": 30,
+        "name": "\u200bmedi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5100,
+        "id": 222,
+        "name": "\u200be\u200bntero"
+      }
+    ]
+  },
+  {
+    "Code": "00031",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4300,
+    "ShortCode": "q31",
+    "Tastes": "",
+    "category_id": 31,
+    "category_name": "Chop Suey En Salsa",
+    "id": 31,
+    "name": "#31 Chop suey con camarones y verduras",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4300,
+        "id": 31,
+        "name": "\u200bmedio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5800,
+        "id": 223,
+        "name": "\u200bente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00032",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4300,
+    "ShortCode": "q32",
+    "Tastes": "",
+    "category_id": 31,
+    "category_name": "Chop Suey En Salsa",
+    "id": 32,
+    "name": "#32 Chop suey con mariscos y verduras",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4300,
+        "id": 32,
+        "name": "\u200bmedio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5800,
+        "id": 224,
+        "name": "\u200bente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00033",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4100,
+    "ShortCode": "q33",
+    "Tastes": "",
+    "category_id": 31,
+    "category_name": "Chop Suey En Salsa",
+    "id": 33,
+    "name": "#33 Chop suey con chorizo chino y verduras",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4100,
+        "id": 290,
+        "name": "\u200bmedi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5100,
+        "id": 293,
+        "name": "\u200be\u200bntero"
+      }
+    ]
+  },
+  {
+    "Code": "00034",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q34",
+    "Tastes": "",
+    "category_id": 31,
+    "category_name": "Chop Suey En Salsa",
+    "id": 34,
+    "name": "#34 Chop suey vegetariano",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 34,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 289,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00035",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3800,
+    "ShortCode": "q35",
+    "Tastes": "",
+    "category_id": 32,
+    "category_name": "Chop Suey En Seco",
+    "id": 35,
+    "name": "#35 Chop suey seco de la casa",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3800,
+        "id": 35,
+        "name": "\u200bm\u200bedio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4800,
+        "id": 228,
+        "name": "ente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00036",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3800,
+    "ShortCode": "27s",
+    "Tastes": "",
+    "category_id": 32,
+    "category_name": "Chop Suey En Seco",
+    "id": 36,
+    "name": "#27s Chop suey seco con pollo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3800,
+        "id": 36,
+        "name": "\u200bm\u200bedio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4800,
+        "id": 229,
+        "name": "ente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00037",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4600,
+    "ShortCode": "28S",
+    "Tastes": "",
+    "category_id": 32,
+    "category_name": "Chop Suey En Seco",
+    "id": 37,
+    "name": "#28s Chop suey seco con carne de res",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4600,
+        "id": 37,
+        "name": "med\u200bio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5600,
+        "id": 230,
+        "name": "\u200b\u200bent\u200b\u200bero"
+      }
+    ]
+  },
+  {
+    "Code": "00038",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "28H",
+    "Tastes": "",
+    "category_id": 32,
+    "category_name": "Chop Suey En Seco",
+    "id": 38,
+    "name": "#28h Sahofan seco con lomo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 38,
+        "name": "me\u200bdio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5800,
+        "id": 231,
+        "name": "\u200bente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00039",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3800,
+    "ShortCode": "29S",
+    "Tastes": "",
+    "category_id": 32,
+    "category_name": "Chop Suey En Seco",
+    "id": 39,
+    "name": "#29s Chop suey seco con lech\u00f3n",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3800,
+        "id": 39,
+        "name": "\u200bm\u200bedio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4800,
+        "id": 232,
+        "name": "ente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00040",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4600,
+    "ShortCode": "30S",
+    "Tastes": "",
+    "category_id": 32,
+    "category_name": "Chop Suey En Seco",
+    "id": 40,
+    "name": "#30s Chop suey seco con pollo, camarones",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4600,
+        "id": 40,
+        "name": "med\u200bio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5600,
+        "id": 233,
+        "name": "\u200bente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00041",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "31S",
+    "Tastes": "",
+    "category_id": 32,
+    "category_name": "Chop Suey En Seco",
+    "id": 41,
+    "name": "#31s Chop suey seco con camarones",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 41,
+        "name": "me\u200bdio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 6100,
+        "id": 234,
+        "name": "enter\u200b\u200bo\u200b\u200b"
+      }
+    ]
+  },
+  {
+    "Code": "00042",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "32S",
+    "Tastes": "",
+    "category_id": 32,
+    "category_name": "Chop Suey En Seco",
+    "id": 42,
+    "name": "#32s Chop suey seco con mariscos",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 42,
+        "name": "me\u200bdio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 6100,
+        "id": 235,
+        "name": "enter\u200b\u200bo\u200b\u200b"
+      }
+    ]
+  },
+  {
+    "Code": "00043",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4600,
+    "ShortCode": "33S",
+    "Tastes": "",
+    "category_id": 32,
+    "category_name": "Chop Suey En Seco",
+    "id": 43,
+    "name": "#33s Chop suey seco con chorizo chino",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4600,
+        "id": 43,
+        "name": "med\u200bio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5600,
+        "id": 237,
+        "name": "\u200b\u200bent\u200b\u200bero"
+      }
+    ]
+  },
+  {
+    "Code": "00044",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3800,
+    "ShortCode": "34S",
+    "Tastes": "",
+    "category_id": 32,
+    "category_name": "Chop Suey En Seco",
+    "id": 44,
+    "name": "#34s Chop suey seco vegetariano",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3800,
+        "id": 44,
+        "name": "\u200bm\u200bedio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4800,
+        "id": 238,
+        "name": "ente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00045",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4300,
+    "ShortCode": "q36",
+    "Tastes": "",
+    "category_id": 33,
+    "category_name": "Chau Min",
+    "id": 45,
+    "name": "#36 Chau min de la casa",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4300,
+        "id": 45,
+        "name": "\u200bmedio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5300,
+        "id": 239,
+        "name": "\u200bente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00046",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1900,
+    "ShortCode": "36P",
+    "Tastes": "",
+    "category_id": 33,
+    "category_name": "Chau Min",
+    "id": 46,
+    "name": "#36p Pasta de chau min",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1900,
+        "id": 46,
+        "name": "m\u200bedio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2500,
+        "id": 240,
+        "name": "\u200bentero"
+      }
+    ]
+  },
+  {
+    "Code": "00047",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4300,
+    "ShortCode": "q37",
+    "Tastes": "",
+    "category_id": 33,
+    "category_name": "Chau Min",
+    "id": 47,
+    "name": "#37 Chau min con pollo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4300,
+        "id": 47,
+        "name": "\u200bmedio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5300,
+        "id": 241,
+        "name": "\u200ben\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00048",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5100,
+    "ShortCode": "q38",
+    "Tastes": "",
+    "category_id": 33,
+    "category_name": "Chau Min",
+    "id": 48,
+    "name": "#38 Chau min con camarones",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5100,
+        "id": 48,
+        "name": "medio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 6100,
+        "id": 242,
+        "name": "enter\u200b\u200bo\u200b\u200b"
+      }
+    ]
+  },
+  {
+    "Code": "00049",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "q39",
+    "Tastes": "",
+    "category_id": 34,
+    "category_name": "Espagueti",
+    "id": 49,
+    "name": "#39 Espagueti con pollo en salsa de tomate",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 49,
+        "name": "orden"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 6100,
+        "id": 243,
+        "name": "enter\u200b\u200bo\u200b\u200b"
+      }
+    ]
+  },
+  {
+    "Code": "00050",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5500,
+    "ShortCode": "q40",
+    "Tastes": "",
+    "category_id": 34,
+    "category_name": "Espagueti",
+    "id": 50,
+    "name": "#40 Espagueti con carne de res en salsa de tomate",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5500,
+        "id": 50,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00051",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "41C",
+    "Tastes": "",
+    "category_id": 34,
+    "category_name": "Espagueti",
+    "id": 51,
+    "name": "#41c Espagueti con camar\u00f3n en salsa de tomate",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 51,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00052",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4500,
+    "ShortCode": "q42",
+    "Tastes": "",
+    "category_id": 14,
+    "category_name": "Sopa",
+    "id": 52,
+    "name": "#42 Sopa de mariscos",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4500,
+        "id": 52,
+        "name": "medi\u200bo\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 6000,
+        "id": 276,
+        "name": "entero"
+      }
+    ]
+  },
+  {
+    "Code": "00053",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3500,
+    "ShortCode": "q43",
+    "Tastes": "",
+    "category_id": 14,
+    "category_name": "Sopa",
+    "id": 53,
+    "name": "#43 Sopa de huevo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3500,
+        "id": 53,
+        "name": "medio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4500,
+        "id": 244,
+        "name": "ent\u200bero"
+      }
+    ]
+  },
+  {
+    "Code": "00054",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4300,
+    "ShortCode": "q44",
+    "Tastes": "",
+    "category_id": 14,
+    "category_name": "Sopa",
+    "id": 54,
+    "name": "#44 Sopa de carne de res",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4300,
+        "id": 54,
+        "name": "\u200bmedio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5300,
+        "id": 245,
+        "name": "\u200ben\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00055",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4500,
+    "ShortCode": "q45",
+    "Tastes": "",
+    "category_id": 14,
+    "category_name": "Sopa",
+    "id": 55,
+    "name": "#45 Sopa de camrones",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4500,
+        "id": 55,
+        "name": "medi\u200bo\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 6000,
+        "id": 246,
+        "name": "\u200bentero\u200b"
+      }
+    ]
+  },
+  {
+    "Code": "00056",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3500,
+    "ShortCode": "q46",
+    "Tastes": "",
+    "category_id": 14,
+    "category_name": "Sopa",
+    "id": 56,
+    "name": "#46 Sopa de pollo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3500,
+        "id": 56,
+        "name": "medio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4500,
+        "id": 247,
+        "name": "ent\u200bero"
+      }
+    ]
+  },
+  {
+    "Code": "00057",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4500,
+    "ShortCode": "46M",
+    "Tastes": "",
+    "category_id": 14,
+    "category_name": "Sopa",
+    "id": 57,
+    "name": "#46m Crema de maiz con pollo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4500,
+        "id": 57,
+        "name": "orden"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4500,
+        "id": 248,
+        "name": "ent\u200bero"
+      }
+    ]
+  },
+  {
+    "Code": "00058",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q47",
+    "Tastes": "",
+    "category_id": 14,
+    "category_name": "Sopa",
+    "id": 58,
+    "name": "#47 Sopa con verduras",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 58,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 277,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00059",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4600,
+    "ShortCode": "q48",
+    "Tastes": "",
+    "category_id": 14,
+    "category_name": "Sopa",
+    "id": 59,
+    "name": "#48 Sopa negra con pollo y huevo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4600,
+        "id": 59,
+        "name": "orden"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 249,
+        "name": "en\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00060",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3800,
+    "ShortCode": "q49",
+    "Tastes": "",
+    "category_id": 14,
+    "category_name": "Sopa",
+    "id": 60,
+    "name": "#49 Sopa de tallarin",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3800,
+        "id": 60,
+        "name": "\u200bm\u200bedio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4800,
+        "id": 278,
+        "name": "ente\u200bro"
+      }
+    ]
+  },
+  {
+    "Code": "00061",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4000,
+    "ShortCode": "49S",
+    "Tastes": "",
+    "category_id": 14,
+    "category_name": "Sopa",
+    "id": 61,
+    "name": "#49s Sopa de Saho Fan",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4000,
+        "id": 61,
+        "name": "\u200bmed\u200bio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5000,
+        "id": 250,
+        "name": "entero\u200b"
+      }
+    ]
+  },
+  {
+    "Code": "00062",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4000,
+    "ShortCode": "#50 SOPA DE WAN TAN DE POLLO",
+    "Tastes": "",
+    "category_id": 14,
+    "category_name": "Sopa",
+    "id": 62,
+    "name": "#50 Sopa de wan tan de pollo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4000,
+        "id": 62,
+        "name": "\u200bmed\u200bio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5300,
+        "id": 251,
+        "name": "\u200ben\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00063",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "50C",
+    "Tastes": "",
+    "category_id": 14,
+    "category_name": "Sopa",
+    "id": 63,
+    "name": "#50c Sopa de wan tan de C",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 63,
+        "name": "me\u200bdio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 6300,
+        "id": 252,
+        "name": "ente\u200bro\u200b"
+      }
+    ]
+  },
+  {
+    "Code": "00064",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "q51",
+    "Tastes": "",
+    "category_id": 15,
+    "category_name": "Aperitivos",
+    "id": 64,
+    "name": "#51 Wan tan frito de pollo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 64,
+        "name": "medi\u200bo"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4300,
+        "id": 253,
+        "name": "en\u200btero"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 1500,
+        "id": 291,
+        "name": "peque\u00f1o"
+      }
+    ]
+  },
+  {
+    "Code": "00065",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3800,
+    "ShortCode": "51C",
+    "Tastes": "",
+    "category_id": 15,
+    "category_name": "Aperitivos",
+    "id": 65,
+    "name": "#51c Wan tan frito de Camarones",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3800,
+        "id": 65,
+        "name": "\u200bm\u200bedio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4800,
+        "id": 254,
+        "name": "ente\u200bro"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 1600,
+        "id": 263,
+        "name": "peque\u00f1o"
+      }
+    ]
+  },
+  {
+    "Code": "00066",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3800,
+    "ShortCode": "q52",
+    "Tastes": "",
+    "category_id": 15,
+    "category_name": "Aperitivos",
+    "id": 66,
+    "name": "#52 Taco chino",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3800,
+        "id": 66,
+        "name": "\u200bm\u200bedio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5100,
+        "id": 255,
+        "name": "\u200be\u200bntero"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 1500,
+        "id": 264,
+        "name": "peque\u00f1o"
+      }
+    ]
+  },
+  {
+    "Code": "00067",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 2800,
+    "ShortCode": "52P",
+    "Tastes": "",
+    "category_id": 15,
+    "category_name": "Aperitivos",
+    "id": 67,
+    "name": "#52p Papas fritas",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 2800,
+        "id": 67,
+        "name": "med\u200bio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 3300,
+        "id": 256,
+        "name": "e\u200bntero"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 1500,
+        "id": 261,
+        "name": "peque\u00f1o"
+      }
+    ]
+  },
+  {
+    "Code": "00068",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q53",
+    "Tastes": "",
+    "category_id": 16,
+    "category_name": "Carne De Res",
+    "id": 68,
+    "name": "#53 Bistec el primero",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 68,
+        "name": "orden"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 3300,
+        "id": 257,
+        "name": "e\u200bntero"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 1500,
+        "id": 262,
+        "name": "peque\u00f1o"
+      }
+    ]
+  },
+  {
+    "Code": "00069",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q54",
+    "Tastes": "",
+    "category_id": 16,
+    "category_name": "Carne De Res",
+    "id": 69,
+    "name": "#54 Bistec en salsa de tomate",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 69,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00070",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q55",
+    "Tastes": "",
+    "category_id": 16,
+    "category_name": "Carne De Res",
+    "id": 70,
+    "name": "#55 Bistec empanizado",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 70,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00071",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q56",
+    "Tastes": "",
+    "category_id": 16,
+    "category_name": "Carne De Res",
+    "id": 71,
+    "name": "#56 Bistec encebollado",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 71,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00072",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q60",
+    "Tastes": "",
+    "category_id": 17,
+    "category_name": "Carne De Cerdo",
+    "id": 72,
+    "name": "#60 Chuleta encebollada",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 72,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00073",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q61",
+    "Tastes": "",
+    "category_id": 17,
+    "category_name": "Carne De Cerdo",
+    "id": 73,
+    "name": "#61 Chuleta en salsa de tomate",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 73,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00074",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q62",
+    "Tastes": "",
+    "category_id": 17,
+    "category_name": "Carne De Cerdo",
+    "id": 74,
+    "name": "#62 Chuleta empanizada",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 74,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00075",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q63",
+    "Tastes": "",
+    "category_id": 17,
+    "category_name": "Carne De Cerdo",
+    "id": 75,
+    "name": "#63 Lech\u00f3n asado estilo chino",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 75,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00076",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q64",
+    "Tastes": "",
+    "category_id": 18,
+    "category_name": "Pescado",
+    "id": 76,
+    "name": "#64 Filet de pescado frito empanizado",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 76,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00077",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q65",
+    "Tastes": "",
+    "category_id": 18,
+    "category_name": "Pescado",
+    "id": 77,
+    "name": "#65 Filet de pescado en salsa de tomate",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 77,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00078",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q66",
+    "Tastes": "",
+    "category_id": 18,
+    "category_name": "Pescado",
+    "id": 78,
+    "name": "#66 Filet de pescado en salsa de ostiones",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 78,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00079",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q67",
+    "Tastes": "",
+    "category_id": 18,
+    "category_name": "Pescado",
+    "id": 79,
+    "name": "#67 Filet de pescado a la mantequilla y ajo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 79,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00080",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q68",
+    "Tastes": "",
+    "category_id": 18,
+    "category_name": "Pescado",
+    "id": 80,
+    "name": "#68 Filet de pescado en salsa agridulce",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 80,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00081",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q69",
+    "Tastes": "",
+    "category_id": 19,
+    "category_name": "Camarones",
+    "id": 81,
+    "name": "#69 Camarones fritos empanizados",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 81,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00082",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 7100,
+    "ShortCode": "q70",
+    "Tastes": "",
+    "category_id": 19,
+    "category_name": "Camarones",
+    "id": 82,
+    "name": "#70 Camarones fritos en salsa de tomate",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 7100,
+        "id": 82,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00083",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 7100,
+    "ShortCode": "q71",
+    "Tastes": "",
+    "category_id": 19,
+    "category_name": "Camarones",
+    "id": 83,
+    "name": "#71 Camarones fritos en salsa agridulce",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 7100,
+        "id": 83,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00084",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 7100,
+    "ShortCode": "q72",
+    "Tastes": "",
+    "category_id": 19,
+    "category_name": "Camarones",
+    "id": 84,
+    "name": "#72 Camarones fritos en salsa de ostiones",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 7100,
+        "id": 84,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00085",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 7100,
+    "ShortCode": "q73",
+    "Tastes": "",
+    "category_id": 19,
+    "category_name": "Camarones",
+    "id": 85,
+    "name": "#73 Camarones a la mantequilla y ajo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 7100,
+        "id": 85,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00086",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4900,
+    "ShortCode": "q79",
+    "Tastes": "",
+    "category_id": 20,
+    "category_name": "Carne Blanca",
+    "id": 86,
+    "name": "#79 Alitas de pollo fritas con papas a la francesa",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4900,
+        "id": 86,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00087",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3300,
+    "ShortCode": "79S",
+    "Tastes": "",
+    "category_id": 20,
+    "category_name": "Carne Blanca",
+    "id": 87,
+    "name": "#79s Solo Alitas",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3300,
+        "id": 87,
+        "name": "orden"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 1500,
+        "id": 279,
+        "name": "peque\u00f1o"
+      }
+    ]
+  },
+  {
+    "Code": "00088",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5900,
+    "ShortCode": "q80",
+    "Tastes": "",
+    "category_id": 21,
+    "category_name": "Ensaladas Frias",
+    "id": 88,
+    "name": "#80 Ensalada de camarones",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5900,
+        "id": 88,
+        "name": "orden"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 1500,
+        "id": 265,
+        "name": "peque\u00f1o"
+      }
+    ]
+  },
+  {
+    "Code": "00089",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "q81",
+    "Tastes": "",
+    "category_id": 21,
+    "category_name": "Ensaladas Frias",
+    "id": 89,
+    "name": "#81 Ensalada de palmito",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 89,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00090",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5300,
+    "ShortCode": "q82",
+    "Tastes": "",
+    "category_id": 21,
+    "category_name": "Ensaladas Frias",
+    "id": 90,
+    "name": "#82 Ensalada mixta",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5300,
+        "id": 90,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00091",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "q83",
+    "Tastes": "",
+    "category_id": 21,
+    "category_name": "Ensaladas Frias",
+    "id": 91,
+    "name": "#83 Ensalada de pollo",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 91,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00092",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q88",
+    "Tastes": "",
+    "category_id": 22,
+    "category_name": "Platillos De China",
+    "id": 92,
+    "name": "#88 Pollo salteado con champi\u00f1ones",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 92,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00093",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q89",
+    "Tastes": "",
+    "category_id": 22,
+    "category_name": "Platillos De China",
+    "id": 93,
+    "name": "#89 Pollo salteado con vegetales",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 93,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00094",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q90",
+    "Tastes": "",
+    "category_id": 22,
+    "category_name": "Platillos De China",
+    "id": 94,
+    "name": "#90 Lomito salteado con vegetales",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 94,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00095",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q91",
+    "Tastes": "",
+    "category_id": 22,
+    "category_name": "Platillos De China",
+    "id": 95,
+    "name": "#91 mixta salteado con vegetales",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 95,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00096",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q92",
+    "Tastes": "",
+    "category_id": 22,
+    "category_name": "Platillos De China",
+    "id": 96,
+    "name": "#92 Mariscos  salteado con vegetales",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 96,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00097",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q93",
+    "Tastes": "",
+    "category_id": 22,
+    "category_name": "Platillos De China",
+    "id": 97,
+    "name": "#93 lech\u00f3n  salteado con vegetales",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 97,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00098",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q94",
+    "Tastes": "",
+    "category_id": 22,
+    "category_name": "Platillos De China",
+    "id": 98,
+    "name": "#94 Camarones salteados con vegetales",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 98,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00099",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q96",
+    "Tastes": "",
+    "category_id": 22,
+    "category_name": "Platillos De China",
+    "id": 99,
+    "name": "#96 Pescado salteado con vegetales",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 99,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00100",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q97",
+    "Tastes": "",
+    "category_id": 22,
+    "category_name": "Platillos De China",
+    "id": 100,
+    "name": "#97 Carne de cerdo ba\u00f1ado en salsa agridulce",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 100,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00101",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 6900,
+    "ShortCode": "q98",
+    "Tastes": "",
+    "category_id": 22,
+    "category_name": "Platillos De China",
+    "id": 101,
+    "name": "#98 Pollo cubierto en salsa agridulce",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 6900,
+        "id": 101,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00102",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5300,
+    "ShortCode": "q102",
+    "Tastes": "",
+    "category_id": 23,
+    "category_name": "Casados Combinado",
+    "id": 102,
+    "name": "#102 Combinado con Camarones frito",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5300,
+        "id": 102,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00103",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5100,
+    "ShortCode": "q103",
+    "Tastes": "",
+    "category_id": 23,
+    "category_name": "Casados Combinado",
+    "id": 103,
+    "name": "#103 Combinado con chorizo chino frito",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5100,
+        "id": 103,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00104",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "q105",
+    "Tastes": "",
+    "category_id": 23,
+    "category_name": "Casados Combinado",
+    "id": 104,
+    "name": "#105 Combinado con pollo frito",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 104,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00105",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "105A",
+    "Tastes": "",
+    "category_id": 23,
+    "category_name": "Casados Combinado",
+    "id": 105,
+    "name": "#105a Combinado con alitas de pollo frito",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 105,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00106",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5100,
+    "ShortCode": "105S",
+    "Tastes": "",
+    "category_id": 23,
+    "category_name": "Casados Combinado",
+    "id": 106,
+    "name": "#105s Combinado con  Pollo en salsa agridulce",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5100,
+        "id": 106,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00107",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "q106",
+    "Tastes": "",
+    "category_id": 23,
+    "category_name": "Casados Combinado",
+    "id": 107,
+    "name": "#106 Combinado con chuleta frita",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 107,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00108",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "q107",
+    "Tastes": "",
+    "category_id": 23,
+    "category_name": "Casados Combinado",
+    "id": 108,
+    "name": "#107 Combinado con bistec frito",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 108,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00109",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "q108",
+    "Tastes": "",
+    "category_id": 23,
+    "category_name": "Casados Combinado",
+    "id": 109,
+    "name": "#108 Combinado con pescado frito",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 109,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00110",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4800,
+    "ShortCode": "q109",
+    "Tastes": "",
+    "category_id": 23,
+    "category_name": "Casados Combinado",
+    "id": 110,
+    "name": "#109 Combinado con lech\u00f3n asado",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4800,
+        "id": 110,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00111",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3900,
+    "ShortCode": "q110",
+    "Tastes": "",
+    "category_id": 24,
+    "category_name": "Casados Chino",
+    "id": 111,
+    "name": "#110 Cantones con chop suey en salsa",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3900,
+        "id": 111,
+        "name": "\u200bme\u200bdio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4900,
+        "id": 280,
+        "name": "enter\u200b\u200bo"
+      }
+    ]
+  },
+  {
+    "Code": "00112",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4300,
+    "ShortCode": "q111",
+    "Tastes": "",
+    "category_id": 24,
+    "category_name": "Casados Chino",
+    "id": 112,
+    "name": "#111 Cantones con chop suey seco",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4300,
+        "id": 112,
+        "name": "\u200bmedio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5300,
+        "id": 258,
+        "name": "\u200ben\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00113",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 3900,
+    "ShortCode": "q112",
+    "Tastes": "",
+    "category_id": 24,
+    "category_name": "Casados Chino",
+    "id": 113,
+    "name": "#112 Canton\u00e9s con papas",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 3900,
+        "id": 113,
+        "name": "\u200bme\u200bdio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4900,
+        "id": 259,
+        "name": "enter\u200b\u200bo"
+      }
+    ]
+  },
+  {
+    "Code": "00114",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5200,
+    "ShortCode": "C1",
+    "Tastes": "",
+    "category_id": 25,
+    "category_name": "Combos",
+    "id": 114,
+    "name": "#c1 Combinado con pollo frito",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5200,
+        "id": 114,
+        "name": "orden"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 4900,
+        "id": 260,
+        "name": "enter\u200b\u200bo"
+      }
+    ]
+  },
+  {
+    "Code": "00115",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5200,
+    "ShortCode": "C2",
+    "Tastes": "",
+    "category_id": 25,
+    "category_name": "Combos",
+    "id": 115,
+    "name": "#c2 Combinado con Alitas de Pollo Fritas",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5200,
+        "id": 115,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00116",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5200,
+    "ShortCode": "C3",
+    "Tastes": "",
+    "category_id": 25,
+    "category_name": "Combos",
+    "id": 116,
+    "name": "#c3 Combinado con pescado frito",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5200,
+        "id": 116,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00117",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5700,
+    "ShortCode": "C4",
+    "Tastes": "",
+    "category_id": 25,
+    "category_name": "Combos",
+    "id": 117,
+    "name": "#c4 Combinado con Camarones frito",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5700,
+        "id": 117,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00118",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5700,
+    "ShortCode": "C5",
+    "Tastes": "",
+    "category_id": 25,
+    "category_name": "Combos",
+    "id": 118,
+    "name": "#c5 Combinado con Pollo en Salsa Agridulce",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5700,
+        "id": 118,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00119",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4300,
+    "ShortCode": "C6",
+    "Tastes": "",
+    "category_id": 25,
+    "category_name": "Combos",
+    "id": 119,
+    "name": "#c6 Canton\u00e9s con chop suey en salsa",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4300,
+        "id": 119,
+        "name": "medio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5300,
+        "id": 294,
+        "name": "entero"
+      }
+    ]
+  },
+  {
+    "Code": "00120",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 4300,
+    "ShortCode": "C7",
+    "Tastes": "",
+    "category_id": 25,
+    "category_name": "Combos",
+    "id": 120,
+    "name": "#c7 Canton\u00e9s con Papas",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 4300,
+        "id": 120,
+        "name": "\u200bmedio\u200b"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5300,
+        "id": 275,
+        "name": "\u200ben\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00121",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 10500,
+    "ShortCode": "C9",
+    "Tastes": "",
+    "category_id": 26,
+    "category_name": "combos familiar",
+    "id": 121,
+    "name": "#c9 2 entero cantones con coca 1.5L",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 10500,
+        "id": 121,
+        "name": "orden"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 5300,
+        "id": 274,
+        "name": "\u200ben\u200btero"
+      }
+    ]
+  },
+  {
+    "Code": "00122",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 12000,
+    "ShortCode": "C10",
+    "Tastes": "",
+    "category_id": 26,
+    "category_name": "combos familiar",
+    "id": 122,
+    "name": "#c10 1cantones 10alitas,1/2papas y coca 1.5L",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 12000,
+        "id": 122,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00123",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 9500,
+    "ShortCode": "C11",
+    "Tastes": "",
+    "category_id": 26,
+    "category_name": "combos familiar",
+    "id": 123,
+    "name": "#c11 1 entero cantones,papas grandes,  y coca 1.5L",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 9500,
+        "id": 123,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00124",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 9500,
+    "ShortCode": "C12",
+    "Tastes": "",
+    "category_id": 26,
+    "category_name": "combos familiar",
+    "id": 124,
+    "name": "#c12 1 entero cantones 10 alitas,  y coca 1.5L",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 9500,
+        "id": 124,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00125",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 22000,
+    "ShortCode": "#C13 2CANTONES,79S,PAPASG,1WANTAN G,1COCA 2.5L",
+    "Tastes": "",
+    "category_id": 26,
+    "category_name": "combos familiar",
+    "id": 125,
+    "name": "#c13 2cantones,79s,papasG,1wantan G,1coca 2.5L",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 22000,
+        "id": 125,
+        "name": "orden"
+      }
+    ]
+  },
+  {
+    "Code": "00126",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1200,
+    "ShortCode": "CC",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 126,
+    "name": "Coca",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1200,
+        "id": 126,
+        "name": "vidrio"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 1400,
+        "id": 283,
+        "name": "600ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2000,
+        "id": 284,
+        "name": "1.5L"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 285,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00127",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "CZ",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 127,
+    "name": "Coca Zero",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 281,
+        "name": "600ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 282,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00128",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "FK",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 128,
+    "name": "Fanta Kolita",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 128,
+        "name": "600ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 199,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00129",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "FN",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 129,
+    "name": "Fanta naranja",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 129,
+        "name": "600ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 200,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00130",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "FU",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 130,
+    "name": "Fanta Uva",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 130,
+        "name": "600ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 201,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00131",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "FRE",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 131,
+    "name": "Fresca",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 131,
+        "name": "600ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 202,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00132",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "GIN",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 132,
+    "name": "Ginger",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 132,
+        "name": "600ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 203,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00133",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "7U",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 133,
+    "name": "7up",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 133,
+        "name": "600ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 204,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00134",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "PE",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 134,
+    "name": "Pepsi",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 134,
+        "name": "600ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 205,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00135",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1200,
+    "ShortCode": "TF",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 135,
+    "name": "Tropical de Frutas",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1200,
+        "id": 135,
+        "name": "350ml"
+      }
+    ]
+  },
+  {
+    "Code": "00136",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "TB",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 136,
+    "name": "Te Blanco",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 136,
+        "name": "500ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 286,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00137",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "TL",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 137,
+    "name": "Te Limon",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 137,
+        "name": "500ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 207,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00138",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "TV",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 138,
+    "name": "Te Manzana",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 138,
+        "name": "500ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 208,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00139",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "TM",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 139,
+    "name": "Te Melecoton",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 139,
+        "name": "500ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 209,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00140",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "A",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 140,
+    "name": "Agua",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 140,
+        "name": "500ml"
+      },
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 0,
+        "Price": 2700,
+        "id": 210,
+        "name": "2.5L"
+      }
+    ]
+  },
+  {
+    "Code": "00141",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "CL",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 141,
+    "name": "Cafe con leche",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 141,
+        "name": "vaso"
+      }
+    ]
+  },
+  {
+    "Code": "00142",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 1400,
+    "ShortCode": "CF",
+    "Tastes": "",
+    "category_id": 1,
+    "category_name": "Bebidas",
+    "id": 142,
+    "name": "cafe",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 1400,
+        "id": 142,
+        "name": "vaso"
+      }
+    ]
+  },
+  {
+    "Code": "00170",
+    "IsEatIn": 1,
+    "IsFastFood": 1,
+    "IsStoped": 0,
+    "IsTakeOut": 1,
+    "Notes": null,
+    "Price": 5700,
+    "ShortCode": "SERVICIOS",
+    "Tastes": "",
+    "category_id": 36,
+    "category_name": "SERVICIOS",
+    "id": 188,
+    "name": "SERVICIOS",
+    "units": [
+      {
+        "ExchangeRate": 1,
+        "IsDefault": 1,
+        "Price": 5700,
+        "id": 295,
+        "name": "orden"
+      }
+    ]
+  }
+]

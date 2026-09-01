@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="logo-title logo-desc" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <title id="logo-title">El Primero</title>
+  <desc id="logo-desc">Emblema circular rojo y dorado con los caracteres 隆都 y una cinta con el nombre El Primero</desc>
+  <defs>
+    <linearGradient id="ivory" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff8d8"/>
+      <stop offset="1" stop-color="#f8d77f"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffad16"/>
+      <stop offset="1" stop-color="#f47a08"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e5222b"/>
+      <stop offset="1" stop-color="#c90e1c"/>
+    </linearGradient>
+    <clipPath id="badge-clip">
+      <circle cx="512" cy="506" r="350"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="512" cy="512" r="496" fill="#fff"/>
+
+  <g id="badge">
+    <circle cx="512" cy="506" r="350" fill="url(#ivory)" stroke="#d91525" stroke-width="32"/>
+    <g clip-path="url(#badge-clip)">
+      <path d="M160 674C257 632 367 614 512 618c145-4 255 14 352 56v210H160z" fill="url(#sun)"/>
+      <path d="M187 683c91-31 198-45 325-41 127-4 234 10 325 41" fill="none" stroke="#f6c442" stroke-width="10" opacity=".52"/>
+    </g>
+  </g>
+
+  <text x="512" y="438" text-anchor="middle" fill="#11100d" font-family="Hiragino Sans GB, PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="216" font-weight="600" letter-spacing="22">隆都</text>
+
+  <g id="ribbon-mark">
+    <path d="M111 652c57 18 121 30 192 35-30 24-64 45-101 63-36-9-70-21-103-36-11-5-16-15-13-27l9-35z" fill="#b60b1a"/>
+    <path d="M111 652c39 13 81 22 126 27l-39 36-103-27z" fill="#69020b"/>
+    <path d="M143 510c214-31 489-30 731 10 20-25 42-43 66-53 15-6 27 5 23 21l-39 184c-5 24-20 38-45 42-238 34-502 31-748-25-23-5-34-22-30-45l23-103c4-17 10-27 19-31z" fill="url(#ribbon)"/>
+    <path d="M145 510c215-30 489-29 729 10" fill="none" stroke="#ef3540" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+  </g>
+
+  <text x="512" y="650" text-anchor="middle" textLength="716" lengthAdjust="spacingAndGlyphs" fill="#fff" font-family="Arial Narrow, Avenir Next Condensed, Helvetica Neue, Arial, sans-serif" font-size="126" font-weight="700" letter-spacing="8">EL PRIMERO</text>
+</svg>
