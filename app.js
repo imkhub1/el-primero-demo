@@ -6,7 +6,7 @@ const WHATSAPP_NUMBER = '50625601234';
 const DISCOUNT_PERCENT = 10;
 const DELIVERY_FEE = 0;
 const FEATURED_PRODUCTS = [
-  { id: 1, image: 'arroz-cantones.jpg', alt: 'Arroz cantonés con camarones, carnes y vegetales recién servido.' },
+  { id: 1, image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&h=650&q=82', alt: 'Arroz cantonés con camarones, carnes y vegetales recién servido.' },
   { id: 26, image: 'https://images.unsplash.com/photo-1758979690131-11e2aa0b142b?auto=format&fit=crop&w=900&h=650&q=82', alt: 'Chop suey tradicional con pollo, fideos y vegetales.' },
   { id: 45, image: 'https://images.unsplash.com/photo-1578419997901-b409e7e400b8?auto=format&fit=crop&w=900&h=650&q=82', alt: 'Chau min tradicional con carne y vegetales.' },
   { id: 68, image: 'https://images.unsplash.com/photo-1767429012942-b707f5a8b704?auto=format&fit=crop&w=900&h=650&q=82', alt: 'Bistec salteado con cebolla y chile dulce.' },
